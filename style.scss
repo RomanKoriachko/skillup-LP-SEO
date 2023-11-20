@@ -1,0 +1,78 @@
+@use "reset";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Exo 2", sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 90px;
+}
+
+.row {
+    display: flex;
+}
+
+@mixin registrationBtn() {
+    font-family: "Exo 2", sans-serif;
+    padding: 14px 16px;
+    background-color: #fa2702;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+
+// ------- Descktop -------
+
+.header {
+    padding: 25px 0px;
+    background: #ffffff99;
+    position: fixed;
+    width: 100%;
+    .header-wrapper {
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header-menu {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        gap: 32px;
+        color: #989898;
+    }
+    .registration-btn {
+        @include registrationBtn();
+        background-color: transparent;
+        border: 1px solid #fa2702;
+        color: #fa2702;
+    }
+}
+
+// --- disable hover on touch devices ---
+
+@media (hover: hover) {
+}
+
+// ------- Laptop -------
+@media (max-width: 1200px) {
+}
+
+// -------  Tablet -------
+
+@media (max-width: 992px) {
+}
+
+// ------- Mobile -------
+
+@media (max-width: 576px) {
+}
