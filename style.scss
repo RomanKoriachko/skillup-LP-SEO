@@ -15,7 +15,7 @@ body {
     padding: 0px 90px;
 }
 .small-container {
-    max-width: 1160px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0px 90px;
 }
@@ -231,6 +231,7 @@ body {
                     padding-bottom: 10px;
                     border-bottom: 1px solid #989898;
                     align-items: flex-end;
+                    overflow: hidden;
                     .diagram-item-salary {
                         text-align: center;
                         margin-bottom: 7px;
@@ -290,6 +291,38 @@ body {
                         line-height: 19px;
                         margin-bottom: 3px;
                     }
+                }
+            }
+        }
+    }
+    .numbers-section {
+        padding-top: 60px;
+        padding-bottom: 90px;
+        .numbers-title {
+            margin-bottom: 65px;
+        }
+        .number-wrapper {
+            justify-content: space-between;
+            .number-item {
+                text-align: center;
+                // min-width: 280px;
+                max-width: 280px;
+                .number-item-title {
+                    font-size: 64px;
+                    font-weight: 400;
+                    line-height: 40px;
+                }
+                .number-item-subtitle {
+                    font-size: 40px;
+                    font-weight: 400;
+                    line-height: 40px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                .nimber-item-text {
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 24px;
                 }
             }
         }
