@@ -148,7 +148,7 @@ body {
 .header {
   padding: 25px 0px;
   background: rgba(255, 255, 255, 0.6);
-  position: fixed;
+  position: absolute;
   width: 100%;
 }
 .header .header-wrapper {
@@ -177,6 +177,17 @@ body {
   color: #fa2702;
 }
 
+.main .main-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 52px;
+}
+.main .main-title .brand-green {
+  color: #4ebd09;
+}
+.main .main-title .brand-red {
+  color: #fa2702;
+}
 .main .introduce-section {
   padding: 170px 0px 70px;
   background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
@@ -253,4 +264,40 @@ body {
   font-weight: 700;
   line-height: 19px;
   background-color: #a61a01;
+}
+.main .for-who-section {
+  padding: 60px 0px 80px;
+}
+.main .for-who-section .for-who-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+.main .for-who-section .for-who-wrapper {
+  gap: 40px;
+}
+.main .for-who-section .for-who-wrapper .for-who-item {
+  width: 25%;
+}
+.main .for-who-section .for-who-wrapper .for-who-item .for-who-item-img {
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 80px;
+}
+.main .for-who-section .for-who-wrapper .for-who-item .for-who-item-img-1 {
+  background-image: url(images/for-who-img-1.svg);
+}
+.main .for-who-section .for-who-wrapper .for-who-item .for-who-item-img-2 {
+  background-image: url(images/for-who-img-2.svg);
+}
+.main .for-who-section .for-who-wrapper .for-who-item .for-who-item-img-3 {
+  background-image: url(images/for-who-img-3.svg);
+}
+.main .for-who-section .for-who-wrapper .for-who-item .for-who-item-img-4 {
+  background-image: url(images/for-who-img-4.svg);
+}
+.main .for-who-section .for-who-wrapper .for-who-item .for-who-item-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
 }
