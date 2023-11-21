@@ -337,3 +337,88 @@ body {
   font-weight: 400;
   line-height: 23px;
 }
+.main .salary-section {
+  padding: 100px 0px;
+  background-image: url(images/salary-bg.jpg);
+  color: #1f1e28;
+}
+.main .salary-section .salary-text-content {
+  line-height: 23px;
+}
+.main .salary-section .salary-text-content > span {
+  text-decoration: underline;
+  font-weight: 700;
+}
+.main .salary-section .salary-wrapper {
+  align-items: center;
+  gap: 60px;
+}
+.main .salary-section .salary-diagram {
+  gap: 16px;
+  align-items: flex-end;
+}
+.main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #989898;
+  align-items: flex-end;
+}
+.main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper .diagram-item-salary {
+  text-align: center;
+  margin-bottom: 7px;
+  font-weight: 700;
+}
+.main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper .diagram-scale-min,
+.main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper .diagram-scale-max {
+  width: 60px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  text-align: center;
+  position: relative;
+}
+.main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper .diagram-scale-min > p,
+.main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper .diagram-scale-max > p {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+.main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper .diagram-scale-min {
+  background-color: #a2c989;
+}
+.main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper .diagram-scale-max {
+  background-color: #4ebd09;
+}
+.main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper .diagram-junior-min {
+  height: 33px;
+}
+.main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper .diagram-junior-max {
+  height: 44px;
+}
+.main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper .diagram-middle-min {
+  height: 57px;
+}
+.main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper .diagram-middle-max {
+  height: 97px;
+}
+.main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper .diagram-senior-min {
+  height: 114px;
+}
+.main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper .diagram-senior-max {
+  height: 156px;
+}
+.main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper .diagram-lead-min {
+  height: 156px;
+}
+.main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper .diagram-lead-max {
+  height: 300px;
+}
+.main .salary-section .salary-diagram .salary-diagram-item .diagram-description {
+  margin-top: 12px;
+  text-align: center;
+}
+.main .salary-section .salary-diagram .salary-diagram-item .diagram-description .diagram-item-name {
+  font-weight: 700;
+  line-height: 19px;
+  margin-bottom: 3px;
+}
