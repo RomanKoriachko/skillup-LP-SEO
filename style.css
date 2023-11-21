@@ -340,6 +340,7 @@ body {
 .main .salary-section {
   padding: 100px 0px;
   background-image: url(images/salary-bg.jpg);
+  background-size: cover;
   color: #1f1e28;
 }
 .main .salary-section .salary-text-content {
@@ -358,10 +359,8 @@ body {
   align-items: flex-end;
 }
 .main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #989898;
+  margin-bottom: 10px;
   align-items: flex-end;
-  overflow: hidden;
 }
 .main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper .diagram-item-salary {
   text-align: center;
@@ -415,7 +414,8 @@ body {
   height: 300px;
 }
 .main .salary-section .salary-diagram .salary-diagram-item .diagram-description {
-  margin-top: 12px;
+  border-top: 1px solid #989898;
+  padding-top: 12px;
   text-align: center;
 }
 .main .salary-section .salary-diagram .salary-diagram-item .diagram-description .diagram-item-name {
@@ -426,6 +426,7 @@ body {
 .main .numbers-section {
   padding-top: 60px;
   padding-bottom: 90px;
+  color: #0d1a30;
 }
 .main .numbers-section .numbers-title {
   margin-bottom: 65px;
@@ -435,7 +436,7 @@ body {
 }
 .main .numbers-section .number-wrapper .number-item {
   text-align: center;
-  max-width: 280px;
+  max-width: 320px;
 }
 .main .numbers-section .number-wrapper .number-item .number-item-title {
   font-size: 64px;
@@ -453,4 +454,80 @@ body {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
+}
+.main .form-1-section {
+  background-color: #0d1a30;
+  color: white;
+  padding-top: 125px;
+  padding-bottom: 105px;
+}
+.main .form-1-section .form-1-wrapper {
+  gap: 70px;
+}
+.main .form-1-section .form-1-wrapper .form-1-description {
+  width: 50%;
+}
+.main .form-1-section .form-1-wrapper .form-1-description .form-1-description-title-wrapper {
+  gap: 5px;
+  margin-bottom: 40px;
+}
+.main .form-1-section .form-1-wrapper .form-1-description .form-1-description-title-wrapper .text-and-arrow-wrapper {
+  align-items: center;
+  gap: 5px;
+}
+.main .form-1-section .form-1-wrapper .form-1-description .form-1-description-title-wrapper .arrow-img {
+  background-image: url(images/arrow-right-circle.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-top: 5px;
+}
+.main .form-1-section .form-1-wrapper .form-1-description .form-1-description-text {
+  line-height: 23px;
+}
+.main .form-1-section .form-1-wrapper .form-1 {
+  width: 50%;
+}
+.main .form-1-section .form-1-wrapper .form-1 .form-input {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: 700;
+  line-height: 19px;
+}
+.main .form-1-section .form-1-wrapper .form-1 .form-input::-moz-placeholder {
+  font-weight: 700;
+  color: #4d4d4d;
+}
+.main .form-1-section .form-1-wrapper .form-1 .form-input::placeholder {
+  font-weight: 700;
+  color: #4d4d4d;
+}
+.main .form-1-section .form-1-wrapper .form-1 .iti {
+  width: 100%;
+}
+.main .form-1-section .form-1-wrapper .form-1 .iti input {
+  padding-left: 50px;
+}
+.main .form-1-section .form-1-wrapper .form-1 .iti .iti__country-name {
+  color: #0d1a30;
+}
+.main .form-1-section .form-1-wrapper .form-1 .form-phone-number-output {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 23px;
+}
+.main .form-1-section .form-1-wrapper .form-1 .form-btn {
+  font-family: "Exo 2", sans-serif;
+  padding: 14px 16px;
+  background-color: #fa2702;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  width: 100%;
 }

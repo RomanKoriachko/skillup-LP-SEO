@@ -16,6 +16,17 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css"
+        />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"
+        ></script>
+        <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script defer src="jquery.js"></script>
+        <script defer src="app.js"></script>
         <title>SkillUp - SEO</title>
     </head>
     <body>
@@ -361,11 +372,84 @@
                     </div>
                 </div>
             </section>
+            <section class="form-1-section">
+                <div class="small-container">
+                    <div class="form-1-wrapper row">
+                        <div class="form-1-description">
+                            <div class="form-1-description-title-wrapper">
+                                <p class="main-title">
+                                    Стань
+                                    <span class="brand-red">СЕО</span
+                                    >-специалистом
+                                </p>
+                                <div class="row text-and-arrow-wrapper">
+                                    <p class="main-title">
+                                        <span class="brand-green"
+                                            >за 2 месяца</span
+                                        >
+                                    </p>
+                                    <div class="arrow-img"></div>
+                                </div>
+                            </div>
+                            <p class="form-1-description-text">
+                                Проходи SEO обучение в SkillUP и получи шанс
+                                найти работу уже на финальном экзамене курса.+
+                                БОНУС: Лекция "Линкбилдинг для зарубежных
+                                проектов". Получи практический опыт построения
+                                ссылочной массы для эффективной работы в
+                                зарубежных проектах.
+                            </p>
+                        </div>
+                        <form
+                            class="form-1"
+                            id="form-1"
+                            method="POST"
+                            action="send.php"
+                        >
+                            <div>
+                                <input
+                                    required
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    class="form-input"
+                                    placeholder="Имя"
+                                />
+                            </div>
+                            <div class="form-input-wrapper">
+                                <input
+                                    required
+                                    type="tel"
+                                    name="phone1"
+                                    id="phone1"
+                                    class="form-input"
+                                    placeholder="Телефон"
+                                />
+                                <p
+                                    class="form-phone-number-output"
+                                    id="output"
+                                ></p>
+                            </div>
+                            <div>
+                                <input
+                                    required
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    class="form-input"
+                                    placeholder="Email"
+                                />
+                            </div>
+                            <div class="btn-wrapper">
+                                <button class="form-btn" type="submit">
+                                    Записаться на занятие<span></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="footer"></footer>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
     </body>
 </html>
