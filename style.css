@@ -689,6 +689,84 @@ body {
   max-width: 300px;
   margin-top: 10px;
 }
+.main .cource-section {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  color: #0d1a30;
+  overflow: hidden;
+}
+.main .cource-section .cource-header-wrapper {
+  align-items: center;
+  margin-bottom: 90px;
+}
+.main .cource-section .cource-header {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+}
+.main .cource-section .cource-description {
+  width: 50%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #333142;
+}
+.main .cource-section .cource-content-wrapper .cource-content-item {
+  padding: 29px 30px 29px 21px;
+  border-top: 1px solid #000000;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.main .cource-section .cource-content-wrapper .cource-content-item .cource-content-item-name-wrapper {
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  overflow: hidden;
+  z-index: 10;
+  cursor: pointer;
+}
+.main .cource-section .cource-content-wrapper .cource-content-item .cource-content-item-name-wrapper .plus-img {
+  width: 24px;
+  height: 24px;
+  background-image: url(images/plus-circle.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main .cource-section .cource-content-wrapper .cource-content-item .cource-content-item-name-wrapper.open .plus-img {
+  transition: all 0.5s;
+  background-image: url(images/minus-circle.svg);
+}
+.main .cource-section .cource-content-wrapper .cource-content-item:last-child {
+  border-bottom: 1px solid #000000;
+}
+.main .cource-section .cource-content-wrapper .cource-content-item-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  visibility: hidden;
+  opacity: 0;
+  height: 0px;
+  margin-top: -20px;
+  transition: margin-top 0.5s;
+}
+.main .cource-section .cource-content-wrapper .cource-content-item-text > ul {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.main .cource-section .cource-content-wrapper .cource-content-item-text p {
+  margin-left: -40px;
+}
+.main .cource-section .cource-content-wrapper .cource-content-item-text p > span {
+  color: #4ebd09;
+}
+.main .cource-section .cource-content-wrapper .cource-content-item-text.open {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  margin-top: 0px;
+}
 
 @media (hover: hover) {
   .main .benefits-section .benefits-wrapper .benefit-item {

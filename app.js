@@ -56,3 +56,17 @@ function validatePhone(id, formSelector) {
 
 validatePhone("#phone1", "#form-1");
 validatePhone("#phone2", "#form-2");
+
+// Show cource items
+
+const courceBtns = document.querySelectorAll(
+    ".cource-content-item-name-wrapper"
+);
+const courceContent = document.querySelectorAll(".cource-content-item-text");
+
+for (let i = 0; i <= courceBtns.length; i++) {
+    courceBtns[i].addEventListener("click", () => {
+        courceContent[i].classList.toggle("open");
+        courceBtns[i].classList.toggle("open");
+    });
+}
