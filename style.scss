@@ -752,6 +752,33 @@ body {
             }
         }
     }
+    .photo-section {
+        color: #0d1a30;
+        padding-top: 80px;
+        padding-bottom: 72px;
+        text-align: center;
+        .photo-title {
+            margin-bottom: 20px;
+        }
+        .photo-text {
+            line-height: 23px;
+        }
+        .photo-viewer {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            .photo-viewer-item {
+                > img {
+                    width: 100%;
+                }
+            }
+            .photo-1 {
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+        }
+    }
 }
 
 // --- disable hover on touch devices ---

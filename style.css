@@ -914,6 +914,31 @@ body {
   font-weight: 700;
   line-height: 19px;
 }
+.main .photo-section {
+  color: #0d1a30;
+  padding-top: 80px;
+  padding-bottom: 72px;
+  text-align: center;
+}
+.main .photo-section .photo-title {
+  margin-bottom: 20px;
+}
+.main .photo-section .photo-text {
+  line-height: 23px;
+}
+.main .photo-section .photo-viewer {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+.main .photo-section .photo-viewer .photo-viewer-item > img {
+  width: 100%;
+}
+.main .photo-section .photo-viewer .photo-1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
 
 @media (hover: hover) {
   .main .benefits-section .benefits-wrapper .benefit-item {
