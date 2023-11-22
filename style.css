@@ -828,6 +828,92 @@ body {
   grid-column-start: 6;
   grid-column-end: 8;
 }
+.main .form-3-section {
+  background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
+}
+.main .form-3-section .form-3-bg {
+  padding-top: 38px;
+  padding-bottom: 83px;
+  background-image: url(images/form-3-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main .form-3-section .form-3-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  color: #0d1a30;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+.main .form-3-section .form-3-text {
+  line-height: 23px;
+  color: #4d4d4d;
+  text-align: center;
+}
+.main .form-3-section .form-3 {
+  margin-top: 32px;
+}
+.main .form-3-section .form-3 .inputs-wrapper {
+  justify-content: center;
+  align-items: flex-start;
+  gap: 21px;
+}
+.main .form-3-section .form-3 .inputs-wrapper .form-input,
+.main .form-3-section .form-3 .inputs-wrapper .form-btn,
+.main .form-3-section .form-3 .inputs-wrapper .form-input-wrapper {
+  width: 25%;
+}
+.main .form-3-section .form-3 .inputs-wrapper .form-input-wrapper {
+  position: relative;
+}
+.main .form-3-section .form-3 .inputs-wrapper .form-input-wrapper > input {
+  width: 100%;
+}
+.main .form-3-section .form-3 .inputs-wrapper .form-input-wrapper .form-phone-number-output {
+  position: absolute;
+  bottom: -25px;
+  left: 0px;
+}
+.main .form-3-section .form-3 .inputs-wrapper .form-input-wrapper .form-phone-number-output.correct {
+  bottom: -55px;
+}
+.main .form-3-section .form-3 .inputs-wrapper .form-input {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.main .form-3-section .form-3 .inputs-wrapper .form-input::-moz-placeholder {
+  font-weight: 700;
+  line-height: 19px;
+}
+.main .form-3-section .form-3 .inputs-wrapper .form-input::placeholder {
+  font-weight: 700;
+  line-height: 19px;
+}
+.main .form-3-section .form-3 .inputs-wrapper .iti {
+  width: 100%;
+}
+.main .form-3-section .form-3 .inputs-wrapper .iti input {
+  width: 100%;
+  padding-left: 50px;
+}
+.main .form-3-section .form-3 .inputs-wrapper .form-btn {
+  font-family: "Exo 2", sans-serif;
+  padding: 14px 16px;
+  background-color: #fa2702;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
 
 @media (hover: hover) {
   .main .benefits-section .benefits-wrapper .benefit-item {

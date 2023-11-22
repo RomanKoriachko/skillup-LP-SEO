@@ -678,6 +678,80 @@ body {
             }
         }
     }
+    .form-3-section {
+        background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
+        .form-3-bg {
+            padding-top: 38px;
+            padding-bottom: 83px;
+            background-image: url(images/form-3-bg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .form-3-title {
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 77px;
+            color: #0d1a30;
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+        .form-3-text {
+            line-height: 23px;
+            color: #4d4d4d;
+            text-align: center;
+        }
+        .form-3 {
+            margin-top: 32px;
+            .inputs-wrapper {
+                justify-content: center;
+                align-items: flex-start;
+                gap: 21px;
+                .form-input,
+                .form-btn,
+                .form-input-wrapper {
+                    width: 25%;
+                }
+                .form-input-wrapper {
+                    position: relative;
+                    > input {
+                        width: 100%;
+                    }
+                    .form-phone-number-output {
+                        position: absolute;
+                        bottom: -25px;
+                        left: 0px;
+                    }
+                    .form-phone-number-output.correct {
+                        bottom: -55px;
+                    }
+                }
+                .form-input {
+                    padding: 14px 20px;
+                    border: none;
+                    border-radius: 8px;
+                    font-weight: 700;
+                    line-height: 19px;
+                    &::placeholder {
+                        font-weight: 700;
+                        line-height: 19px;
+                    }
+                }
+                .iti {
+                    width: 100%;
+                    input {
+                        width: 100%;
+                        padding-left: 50px;
+                    }
+                }
+                .form-btn {
+                    @include registrationBtn();
+                }
+            }
+        }
+    }
 }
 
 // --- disable hover on touch devices ---

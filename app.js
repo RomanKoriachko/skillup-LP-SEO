@@ -41,11 +41,13 @@ function validatePhone(id, formSelector) {
                 output.innerHTML =
                     "Номер корректный, полный международный формат: " +
                     iti.getNumber();
+                output.classList.add("correct");
             } else {
                 form.addEventListener("submit", preventDefault);
                 inputWrapper.classList.add("false-number");
                 const errorCode = iti.getValidationError();
                 output.innerHTML = errorMap[errorCode];
+                output.classList.remove("correct");
             }
         }
     });
@@ -56,6 +58,7 @@ function validatePhone(id, formSelector) {
 
 validatePhone("#phone1", "#form-1");
 validatePhone("#phone2", "#form-2");
+validatePhone("#phone3", "#form-3");
 
 // Show cource items
 
