@@ -422,11 +422,60 @@ body {
             }
         }
     }
+    .benefits-section {
+        padding-top: 60px;
+        padding-bottom: 75px;
+        cursor: url(images/mouse-pointer-black.svg), auto;
+        .benefits-title {
+            margin-bottom: 40px;
+        }
+        .benefits-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+            .benefit-item {
+                padding: 32px;
+                border: 1px solid #989898;
+                border-radius: 8px;
+                .benefit-item-title {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    margin-bottom: 16px;
+                }
+                .benefit-item-text {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
 }
 
 // --- disable hover on touch devices ---
 
 @media (hover: hover) {
+    .main {
+        .benefits-section {
+            .benefits-wrapper {
+                .benefit-item {
+                    transition: 0.3s all;
+                    &:hover {
+                        cursor: url(images/mouse-pointer-white.svg), auto;
+                        background-color: #17161f;
+                        .benefit-item-title {
+                            color: #4ebd09;
+                        }
+                        .benefit-item-text {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // ------- Laptop -------

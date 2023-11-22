@@ -561,3 +561,49 @@ body {
   width: 100%;
   min-height: 120px;
 }
+.main .benefits-section {
+  padding-top: 60px;
+  padding-bottom: 75px;
+  cursor: url(images/mouse-pointer-black.svg), auto;
+}
+.main .benefits-section .benefits-title {
+  margin-bottom: 40px;
+}
+.main .benefits-section .benefits-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.main .benefits-section .benefits-wrapper .benefit-item {
+  padding: 32px;
+  border: 1px solid #989898;
+  border-radius: 8px;
+}
+.main .benefits-section .benefits-wrapper .benefit-item .benefit-item-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.main .benefits-section .benefits-wrapper .benefit-item .benefit-item-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+@media (hover: hover) {
+  .main .benefits-section .benefits-wrapper .benefit-item {
+    transition: 0.3s all;
+  }
+  .main .benefits-section .benefits-wrapper .benefit-item:hover {
+    cursor: url(images/mouse-pointer-white.svg), auto;
+    background-color: #17161f;
+  }
+  .main .benefits-section .benefits-wrapper .benefit-item:hover .benefit-item-title {
+    color: #4ebd09;
+  }
+  .main .benefits-section .benefits-wrapper .benefit-item:hover .benefit-item-text {
+    color: white;
+  }
+}
