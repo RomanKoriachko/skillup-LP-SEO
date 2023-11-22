@@ -1,3 +1,5 @@
+// initialaze AOS
+
 AOS.init();
 
 // phone input

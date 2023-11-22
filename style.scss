@@ -392,6 +392,36 @@ body {
             }
         }
     }
+    .opportunities-section {
+        background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
+        padding-top: 150px;
+        padding-bottom: 90px;
+        .opportunities-wrapper {
+            gap: 32px;
+        }
+        .opportunities-title {
+            width: 55%;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 77px;
+            color: #0d1a30;
+        }
+        .opportunities-logo-wrapper {
+            width: 40%;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-top: 80px;
+            .opportunities-logo {
+                background-image: url(images/logo.svg);
+                background-position: left;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 100%;
+                min-height: 120px;
+            }
+        }
+    }
 }
 
 // --- disable hover on touch devices ---
