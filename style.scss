@@ -779,6 +779,93 @@ body {
             }
         }
     }
+    .coaches-section {
+        background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
+        color: #0d1a30;
+        padding-top: 80px;
+        padding-bottom: 40px;
+        .coaches-title {
+            text-align: center;
+        }
+        .coaches-slider {
+            margin-top: 40px;
+            .slider-item {
+                line-height: 23px;
+                color: #000000;
+                margin-left: 10px;
+                margin-right: 10px;
+                .coach-photo {
+                    width: 120px;
+                    height: 120px;
+                    margin: 0 auto;
+                    margin-bottom: 24px;
+                }
+                .coach-name {
+                    font-weight: 700;
+                }
+                .coach-expirience {
+                    color: #4d4d4d;
+                    margin-bottom: 24px;
+                }
+            }
+            .slider-item-1 {
+                .coach-photo {
+                    background-image: url(images/coach-photo-1.png);
+                }
+            }
+            .slider-item-2 {
+                .coach-photo {
+                    background-image: url(images/coach-photo-2.png);
+                }
+            }
+            .slider-item-3 {
+                .coach-photo {
+                    background-image: url(images/coach-photo-3.png);
+                }
+            }
+            .slider-item-4 {
+                .coach-photo {
+                    background-image: url(images/coach-photo-4.png);
+                }
+            }
+            .slider-item-5 {
+                .coach-photo {
+                    background-image: url(images/coach-photo-5.png);
+                }
+            }
+            .slick-dots {
+                bottom: -45px;
+                li {
+                    width: 16px;
+                    margin: 0 8px;
+                    button {
+                        width: 16px;
+                        height: 16px;
+                        background-color: #989898;
+                        border-radius: 50%;
+                        &::before {
+                            width: 16px;
+                            height: 16px;
+                            content: "";
+                        }
+                    }
+                }
+                .slick-active {
+                    width: 20px;
+                    button {
+                        width: 20px;
+                        height: 20px;
+                        background-color: #0d1a30;
+                        &::before {
+                            width: 20px;
+                            height: 20px;
+                            content: "";
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // --- disable hover on touch devices ---

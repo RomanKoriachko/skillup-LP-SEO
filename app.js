@@ -73,3 +73,15 @@ for (let i = 0; i < courceBtns.length; i++) {
         courceBtns[i].classList.toggle("open");
     });
 }
+
+// Slider
+
+$(document).ready(function () {
+    $(".coaches-slider").slick({
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: false,
+    });
+});
