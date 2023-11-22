@@ -4,11 +4,11 @@ AOS.init();
 
 // phone input
 
-function validatePhone(id) {
+function validatePhone(id, formSelector) {
     const input = document.querySelector(id);
     const output = input.nextElementSibling;
     const inputWrapper = input.parentElement;
-    const form = document.querySelector(".form-1");
+    const form = document.querySelector(formSelector);
     const errorMap = [
         "Некорректный номер",
         "Некоректный код страны",
@@ -54,4 +54,5 @@ function validatePhone(id) {
     input.addEventListener("keyup", reset);
 }
 
-validatePhone("#phone1");
+validatePhone("#phone1", "#form-1");
+validatePhone("#phone2", "#form-2");
