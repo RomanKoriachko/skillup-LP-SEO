@@ -64,7 +64,7 @@ const courceBtns = document.querySelectorAll(
 );
 const courceContent = document.querySelectorAll(".cource-content-item-text");
 
-for (let i = 0; i <= courceBtns.length; i++) {
+for (let i = 0; i < courceBtns.length; i++) {
     courceBtns[i].addEventListener("click", () => {
         courceContent[i].classList.toggle("open");
         courceBtns[i].classList.toggle("open");

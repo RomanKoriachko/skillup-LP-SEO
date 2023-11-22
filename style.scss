@@ -617,6 +617,67 @@ body {
             }
         }
     }
+    .services-section {
+        background-color: #f9f9f9;
+        padding-top: 64px;
+        padding-bottom: 70px;
+        .services-title {
+            text-align: center;
+            color: #17161f;
+            margin-bottom: 50px;
+        }
+        .services-items-wrapper {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+            .services-item {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-color: #ffffff;
+                height: 140px;
+                width: 100%;
+                border: 1px solid #989898;
+                border-radius: 8px;
+            }
+            .services-item-1 {
+                background-image: url(images/services-img-1.png);
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+            .services-item-2 {
+                background-image: url(images/services-img-2.png);
+                grid-column-start: 3;
+                grid-column-end: 5;
+            }
+            .services-item-3 {
+                background-image: url(images/services-img-3.png);
+                grid-column-start: 5;
+                grid-column-end: 7;
+            }
+            .services-item-4 {
+                background-image: url(images/services-img-4.png);
+                grid-column-start: 7;
+                grid-column-end: 9;
+            }
+            .services-item-5 {
+                background-image: url(images/services-img-5.png);
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
+            .services-item-6 {
+                background-image: url(images/services-img-6.png);
+                grid-column-start: 4;
+                grid-column-end: 6;
+            }
+            .services-item-7 {
+                background-image: url(images/services-img-7.png);
+                grid-column-start: 6;
+                grid-column-end: 8;
+            }
+        }
+    }
 }
 
 // --- disable hover on touch devices ---
