@@ -1288,6 +1288,70 @@ body {
   line-height: 19px;
 }
 
+.footer {
+  background-color: #0d1a30;
+  padding-top: 40px;
+  color: #ffffff;
+}
+.footer .footer-contacts-wrapper {
+  justify-content: space-evenly;
+  padding-bottom: 33px;
+}
+.footer .footer-contacts-wrapper .footer-contacts-title {
+  color: #4ebd09;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+}
+.footer .footer-contacts-wrapper .footer-contacts-subtitle {
+  color: #989898;
+}
+.footer .footer-contacts-wrapper .footer-phones-list {
+  margin-left: 20px;
+  margin-bottom: 18px;
+}
+.footer .footer-contacts-wrapper .footer-phones-list > li {
+  line-height: 23px;
+}
+.footer .footer-contacts-wrapper .footer-email {
+  font-size: 20px;
+  line-height: 24px;
+}
+.footer .footer-horizontal-line {
+  height: 1px;
+  width: 100%;
+  background-color: #273c5f;
+}
+.footer .footer-underline {
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+}
+.footer .footer-underline .footer-logo {
+  height: 32px;
+}
+.footer .footer-underline .footer-underline-email {
+  color: #4ebd09;
+}
+.footer .footer-underline .footer-link-wrapper {
+  gap: 24px;
+}
+.footer .footer-underline .footer-link-wrapper .footer-link-img {
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer .footer-underline .footer-link-wrapper .footer-link-img-1 {
+  background-image: url(images/facebook.svg);
+}
+.footer .footer-underline .footer-link-wrapper .footer-link-img-2 {
+  background-image: url(images/youtube.svg);
+}
+.footer .footer-underline .footer-link-wrapper .footer-link-img-3 {
+  background-image: url(images/linkedin.svg);
+}
+
 @media (hover: hover) {
   .main .benefits-section .benefits-wrapper .benefit-item {
     transition: 0.3s all;
