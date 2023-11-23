@@ -869,6 +869,7 @@ body {
     .questions-section {
         padding-top: 70px;
         padding-bottom: 30px;
+        cursor: url(images/mouse-pointer-black.svg), auto;
         .questions-wrapper {
             justify-content: space-between;
             .questions-description {
@@ -881,6 +882,7 @@ body {
                 .questions-btn {
                     @include registrationBtn();
                     width: 100%;
+                    cursor: url(images/mouse-pointer-black.svg), auto;
                 }
             }
             .questions-content {
@@ -893,7 +895,7 @@ body {
                         border: 2px solid #989898;
                         border-radius: 8px;
                         transition: all 0.5s;
-                        cursor: pointer;
+                        // cursor: pointer;
                         .question-header {
                             font-size: 20px;
                             font-weight: 700;
@@ -935,6 +937,77 @@ body {
                     }
                 }
             }
+        }
+    }
+    .companies-section {
+        background-color: #f9f9f9;
+        padding-top: 64px;
+        padding-bottom: 54px;
+        .companies-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .companies-slider {
+            .slick-dots {
+                bottom: -55px;
+                li {
+                    width: 16px;
+                    margin: 0 8px;
+                    button {
+                        width: 16px;
+                        height: 16px;
+                        background-color: #989898;
+                        border-radius: 50%;
+                        &::before {
+                            width: 16px;
+                            height: 16px;
+                            content: "";
+                        }
+                    }
+                }
+                .slick-active {
+                    width: 20px;
+                    button {
+                        width: 20px;
+                        height: 20px;
+                        background-color: #0d1a30;
+                        &::before {
+                            width: 20px;
+                            height: 20px;
+                            content: "";
+                        }
+                    }
+                }
+            }
+        }
+        .slider-item {
+            height: 140px;
+            width: 285px;
+            border: 1px solid #989898;
+            border-radius: 8px;
+            background-color: white;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .slider-item-1 {
+            background-image: url(images/company-img-1.png);
+        }
+        .slider-item-2 {
+            background-image: url(images/company-img-2.png);
+        }
+        .slider-item-3 {
+            background-image: url(images/company-img-3.png);
+        }
+        .slider-item-4 {
+            background-image: url(images/company-img-4.png);
+        }
+        .slider-item-5 {
+            background-image: url(images/company-img-5.png);
+        }
+        .slider-item-6 {
+            background-image: url(images/company-img-6.png);
         }
     }
 }

@@ -1019,6 +1019,7 @@ body {
 .main .questions-section {
   padding-top: 70px;
   padding-bottom: 30px;
+  cursor: url(images/mouse-pointer-black.svg), auto;
 }
 .main .questions-section .questions-wrapper {
   justify-content: space-between;
@@ -1042,6 +1043,7 @@ body {
   font-weight: 700;
   line-height: 19px;
   width: 100%;
+  cursor: url(images/mouse-pointer-black.svg), auto;
 }
 .main .questions-section .questions-wrapper .questions-content {
   max-width: 780px;
@@ -1053,7 +1055,6 @@ body {
   border: 2px solid #989898;
   border-radius: 8px;
   transition: all 0.5s;
-  cursor: pointer;
 }
 .main .questions-section .questions-wrapper .questions-content .questions-item .question-header-wrapper .question-header {
   font-size: 20px;
@@ -1092,6 +1093,75 @@ body {
   padding: 40px 28px;
   visibility: visible;
   opacity: 1;
+}
+.main .companies-section {
+  background-color: #f9f9f9;
+  padding-top: 64px;
+  padding-bottom: 54px;
+}
+.main .companies-section .companies-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.main .companies-section .companies-slider .slick-dots {
+  bottom: -55px;
+}
+.main .companies-section .companies-slider .slick-dots li {
+  width: 16px;
+  margin: 0 8px;
+}
+.main .companies-section .companies-slider .slick-dots li button {
+  width: 16px;
+  height: 16px;
+  background-color: #989898;
+  border-radius: 50%;
+}
+.main .companies-section .companies-slider .slick-dots li button::before {
+  width: 16px;
+  height: 16px;
+  content: "";
+}
+.main .companies-section .companies-slider .slick-dots .slick-active {
+  width: 20px;
+}
+.main .companies-section .companies-slider .slick-dots .slick-active button {
+  width: 20px;
+  height: 20px;
+  background-color: #0d1a30;
+}
+.main .companies-section .companies-slider .slick-dots .slick-active button::before {
+  width: 20px;
+  height: 20px;
+  content: "";
+}
+.main .companies-section .slider-item {
+  height: 140px;
+  width: 285px;
+  border: 1px solid #989898;
+  border-radius: 8px;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.main .companies-section .slider-item-1 {
+  background-image: url(images/company-img-1.png);
+}
+.main .companies-section .slider-item-2 {
+  background-image: url(images/company-img-2.png);
+}
+.main .companies-section .slider-item-3 {
+  background-image: url(images/company-img-3.png);
+}
+.main .companies-section .slider-item-4 {
+  background-image: url(images/company-img-4.png);
+}
+.main .companies-section .slider-item-5 {
+  background-image: url(images/company-img-5.png);
+}
+.main .companies-section .slider-item-6 {
+  background-image: url(images/company-img-6.png);
 }
 
 @media (hover: hover) {

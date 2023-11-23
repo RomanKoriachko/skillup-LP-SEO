@@ -74,18 +74,6 @@ for (let i = 0; i < courceBtns.length; i++) {
     });
 }
 
-// Slider
-
-$(document).ready(function () {
-    $(".coaches-slider").slick({
-        arrows: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        dots: true,
-        infinite: false,
-    });
-});
-
 // Show questions answers
 
 const questionBtn = document.querySelectorAll(".question-header-wrapper");
@@ -97,3 +85,27 @@ for (let i = 0; i < questionBtn.length; i++) {
         questionBtn[i].classList.toggle("open");
     });
 }
+
+// Sliders
+
+$(document).ready(function () {
+    $(".coaches-slider").slick({
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: false,
+    });
+});
+
+$(document).ready(function () {
+    $(".companies-slider").slick({
+        arrows: false,
+        autoplay: true,
+        variableWidth: true,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: true,
+        centerMode: true,
+    });
+});
