@@ -40,6 +40,14 @@
             src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
         ></script>
         <script defer type="text/javascript" src="slick/slick.min.js"></script>
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        ></script>
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        ></script>
         <script defer src="app.js"></script>
         <script defer src="lightbox/dist/js/lightbox.js"></script>
         <title>SkillUp - SEO</title>
@@ -50,11 +58,21 @@
                 <div class="header-wrapper row">
                     <img src="images/logo.svg" alt="logo" />
                     <div class="header-menu row">
-                        <p class="header-menu-item">Про курс</p>
-                        <p class="header-menu-item">Программа</p>
-                        <p class="header-menu-item">Преподаватели</p>
-                        <p class="header-menu-item">Отзывы</p>
-                        <p class="header-menu-item">Контакты</p>
+                        <p class="header-menu-item header-menu-item-about">
+                            Про курс
+                        </p>
+                        <p class="header-menu-item header-menu-item-program">
+                            Программа
+                        </p>
+                        <p class="header-menu-item header-menu-item-coaches">
+                            Преподаватели
+                        </p>
+                        <p class="header-menu-item header-menu-item-review">
+                            Отзывы
+                        </p>
+                        <p class="header-menu-item header-menu-item-contact">
+                            Контакты
+                        </p>
                     </div>
                     <button class="registration-btn">Записаться на курс</button>
                 </div>
@@ -106,7 +124,7 @@
                                     <p>2 месяца</p>
                                 </div>
                             </div>
-                            <button class="introduce-btn">
+                            <button class="introduce-btn registration-btn">
                                 Подробнее о курсе
                             </button>
                         </div>
@@ -463,10 +481,20 @@
             <section class="opportunities-section">
                 <div class="small-container">
                     <div class="row opportunities-wrapper">
-                        <p class="opportunities-title">
+                        <p
+                            data-aos="fade-right"
+                            data-aos-duration="1000"
+                            data-aos-once="true"
+                            class="opportunities-title"
+                        >
                             Даем максимум возможностей трудоустройсва
                         </p>
-                        <div class="opportunities-logo-wrapper">
+                        <div
+                            data-aos="fade-left"
+                            data-aos-duration="1000"
+                            data-aos-once="true"
+                            class="opportunities-logo-wrapper"
+                        >
                             <div class="opportunities-logo"></div>
                             <p>
                                 Мы помогаем вам на всех этапах поиска работы:
@@ -617,7 +645,10 @@
                         <div class="form-2-text">
                             <div class="form-2-text-wrapper">
                                 <p class="form-2-text-title">
-                                    <span>8</span> недель
+                                    <span class="counts" data-number="8"
+                                        >0</span
+                                    >
+                                    недель
                                 </p>
                                 <p class="form-2-text-subtitle">
                                     и ты уже можешь выводитьсайты в топ Google
@@ -625,7 +656,10 @@
                             </div>
                             <div class="form-2-text-wrapper">
                                 <p class="form-2-text-title">
-                                    <span>28</span> часов
+                                    <span class="counts" data-number="28"
+                                        >0</span
+                                    >
+                                    часов
                                 </p>
                                 <p class="form-2-text-subtitle">
                                     14 занятий по 2 часа
@@ -633,7 +667,11 @@
                             </div>
                             <div class="form-2-text-wrapper">
                                 <p class="form-2-text-title">
-                                    <span>70%</span> практики
+                                    <span class="counts" data-number="70"
+                                        >0</span
+                                    >
+                                    <span>%</span>
+                                    практики
                                 </p>
                                 <p class="form-2-text-subtitle">
                                     ты практикуешься на реальных задачах
@@ -926,13 +964,48 @@
                         Сервисы, которые вы изучите
                     </p>
                     <div class="services-items-wrapper">
-                        <div class="services-item services-item-1"></div>
-                        <div class="services-item services-item-2"></div>
-                        <div class="services-item services-item-3"></div>
-                        <div class="services-item services-item-4"></div>
-                        <div class="services-item services-item-5"></div>
-                        <div class="services-item services-item-6"></div>
-                        <div class="services-item services-item-7"></div>
+                        <div
+                            data-aos="zoom-in-up"
+                            data-aos-once="true"
+                            data-aos-duration="1000"
+                            class="services-item services-item-1"
+                        ></div>
+                        <div
+                            data-aos="zoom-in-up"
+                            data-aos-once="true"
+                            data-aos-duration="1000"
+                            class="services-item services-item-2"
+                        ></div>
+                        <div
+                            data-aos="zoom-in-up"
+                            data-aos-once="true"
+                            data-aos-duration="1000"
+                            class="services-item services-item-3"
+                        ></div>
+                        <div
+                            data-aos="zoom-in-up"
+                            data-aos-once="true"
+                            data-aos-duration="1000"
+                            class="services-item services-item-4"
+                        ></div>
+                        <div
+                            data-aos="zoom-in-up"
+                            data-aos-once="true"
+                            data-aos-duration="1000"
+                            class="services-item services-item-5"
+                        ></div>
+                        <div
+                            data-aos="zoom-in-up"
+                            data-aos-once="true"
+                            data-aos-duration="1000"
+                            class="services-item services-item-6"
+                        ></div>
+                        <div
+                            data-aos="zoom-in-up"
+                            data-aos-once="true"
+                            data-aos-duration="1000"
+                            class="services-item services-item-7"
+                        ></div>
                     </div>
                 </div>
             </section>
@@ -1137,7 +1210,7 @@
                                 работающие на высоких позициях и имеющие большой
                                 опыт
                             </p>
-                            <button class="questions-btn">
+                            <button class="questions-btn registration-btn">
                                 Записаться на курс
                             </button>
                         </div>

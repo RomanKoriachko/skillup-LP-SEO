@@ -34,6 +34,28 @@ body {
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+    &::after {
+        content: "";
+        background: #4ebd09;
+        position: absolute;
+        z-index: -1;
+        padding: 0.85em 0.75em;
+        display: block;
+        transition: all 0.3s ease;
+        left: -20%;
+        right: -20%;
+        top: 0;
+        bottom: 0;
+        transform: skewX(-45deg) scale(0, 1);
+    }
+    &:hover::after {
+        transition: all 0.3s ease-out;
+        transform: skewX(-45deg) scale(1, 1);
+    }
 }
 
 // ------- Descktop -------
@@ -53,12 +75,18 @@ body {
         line-height: 19px;
         gap: 32px;
         color: #989898;
+        .header-menu-item {
+            cursor: pointer;
+        }
     }
     .registration-btn {
         @include registrationBtn();
         background-color: transparent;
         border: 1px solid #fa2702;
         color: #fa2702;
+        &::after {
+            background: #fa27022d;
+        }
     }
 }
 
@@ -1191,6 +1219,17 @@ body {
 // --- disable hover on touch devices ---
 
 @media (hover: hover) {
+    .header {
+        .header-menu {
+            .header-menu-item {
+                transition: all 0.3s;
+                &:hover {
+                    color: #4d4d4d;
+                }
+            }
+        }
+    }
+
     .main {
         .benefits-section {
             .benefits-wrapper {
@@ -1205,6 +1244,19 @@ body {
                         .benefit-item-text {
                             color: white;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footer-underline {
+            .footer-link-wrapper {
+                .footer-link-img {
+                    transition: all 0.3s;
+                    &:hover {
+                        transform: scale(120%);
                     }
                 }
             }
