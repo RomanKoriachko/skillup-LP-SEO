@@ -85,3 +85,15 @@ $(document).ready(function () {
         infinite: false,
     });
 });
+
+// Show questions answers
+
+const questionBtn = document.querySelectorAll(".question-header-wrapper");
+const questionAnswer = document.querySelectorAll(".question-answer");
+
+for (let i = 0; i < questionBtn.length; i++) {
+    questionBtn[i].addEventListener("click", () => {
+        questionAnswer[i].classList.toggle("open");
+        questionBtn[i].classList.toggle("open");
+    });
+}
