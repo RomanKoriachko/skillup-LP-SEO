@@ -1010,6 +1010,25 @@ body {
             background-image: url(images/company-img-6.png);
         }
     }
+    .video-section {
+        padding: 60px 0px;
+        .video-title {
+            text-align: center;
+        }
+        .current-video-wrapper {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+        .video-tabs {
+            justify-content: center;
+            gap: 20px;
+            > img {
+                width: 20%;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 // --- disable hover on touch devices ---

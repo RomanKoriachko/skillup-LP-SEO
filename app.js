@@ -109,3 +109,10 @@ $(document).ready(function () {
         centerMode: true,
     });
 });
+
+// Video tabs
+
+function changeVideo(videoNumber) {
+    const mainVideo = document.getElementById("mainVideo");
+    mainVideo.src = `https://www.youtube.com/embed/${videoNumber}`;
+}

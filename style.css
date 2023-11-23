@@ -1163,6 +1163,25 @@ body {
 .main .companies-section .slider-item-6 {
   background-image: url(images/company-img-6.png);
 }
+.main .video-section {
+  padding: 60px 0px;
+}
+.main .video-section .video-title {
+  text-align: center;
+}
+.main .video-section .current-video-wrapper {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+.main .video-section .video-tabs {
+  justify-content: center;
+  gap: 20px;
+}
+.main .video-section .video-tabs > img {
+  width: 20%;
+  cursor: pointer;
+}
 
 @media (hover: hover) {
   .main .benefits-section .benefits-wrapper .benefit-item {
