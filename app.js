@@ -59,6 +59,7 @@ function validatePhone(id, formSelector) {
 validatePhone("#phone1", "#form-1");
 validatePhone("#phone2", "#form-2");
 validatePhone("#phone3", "#form-3");
+validatePhone("#phone4", "#form-4");
 
 // Show cource items
 
@@ -114,5 +115,31 @@ $(document).ready(function () {
 
 function changeVideo(videoNumber) {
     const mainVideo = document.getElementById("mainVideo");
+    const tabImg1 = document.querySelector(".tab-img-1");
+    const tabImg2 = document.querySelector(".tab-img-2");
+    const tabImg3 = document.querySelector(".tab-img-3");
+    const tabImg4 = document.querySelector(".tab-img-4");
+
+    if (videoNumber === "ZsnW6_xbuf4?si=tQe859Wl1PEswaUI") {
+        tabImg1.classList.add("current");
+        tabImg2.classList.remove("current");
+        tabImg3.classList.remove("current");
+        tabImg4.classList.remove("current");
+    } else if (videoNumber === "ZoEPiqWJAeg?si=FMBQ50kcx16n6ULH") {
+        tabImg1.classList.remove("current");
+        tabImg2.classList.add("current");
+        tabImg3.classList.remove("current");
+        tabImg4.classList.remove("current");
+    } else if (videoNumber === "KRsgzJE2CVo?si=NHtkvaiOkpgHIrbi") {
+        tabImg1.classList.remove("current");
+        tabImg2.classList.remove("current");
+        tabImg3.classList.add("current");
+        tabImg4.classList.remove("current");
+    } else if (videoNumber === "TM1iGZLnLFM?si=aGAXYkGc-hiht5Gv") {
+        tabImg1.classList.remove("current");
+        tabImg2.classList.remove("current");
+        tabImg3.classList.remove("current");
+        tabImg4.classList.add("current");
+    }
     mainVideo.src = `https://www.youtube.com/embed/${videoNumber}`;
 }

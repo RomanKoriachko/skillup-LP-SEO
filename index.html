@@ -1269,59 +1269,83 @@
                         </div>
                         <div class="video-tabs row">
                             <img
+                                class="tab-img tab-img-1"
                                 src="images/video-1-img.jpg"
                                 alt="video-1"
                                 onclick="changeVideo('ZsnW6_xbuf4?si=tQe859Wl1PEswaUI')"
                             />
                             <img
+                                class="tab-img tab-img-2"
                                 src="images/video-2-img.jpg"
                                 alt="video-2"
                                 onclick="changeVideo('ZoEPiqWJAeg?si=FMBQ50kcx16n6ULH')"
                             />
                             <img
+                                class="tab-img tab-img-3"
                                 src="images/video-3-img.jpg"
                                 alt="video-3"
                                 onclick="changeVideo('KRsgzJE2CVo?si=NHtkvaiOkpgHIrbi')"
                             />
                             <img
+                                class="tab-img tab-img-4"
                                 src="images/video-4-img.jpg"
                                 alt="video-4"
                                 onclick="changeVideo('TM1iGZLnLFM?si=aGAXYkGc-hiht5Gv')"
                             />
-                            <!-- <iframe
-                                id="video2"
-                                width="400"
-                                height="225"
-                                src="https://www.youtube.com/embed/ZoEPiqWJAeg?si=FMBQ50kcx16n6ULH"
-                                title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                frameborder="0"
-                                allowfullscreen
-                            ></iframe>
-                            <iframe
-                                id="video3"
-                                width="400"
-                                height="225"
-                                src="https://www.youtube.com/embed/KRsgzJE2CVo?si=NHtkvaiOkpgHIrbi"
-                                title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                frameborder="0"
-                                allowfullscreen
-                            ></iframe>
-                            <iframe
-                                id="video3"
-                                width="400"
-                                height="225"
-                                src="https://www.youtube.com/embed/TM1iGZLnLFM?si=aGAXYkGc-hiht5Gv"
-                                title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                frameborder="0"
-                                allowfullscreen
-                            ></iframe> -->
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section class="form-4-section">
+                <div class="container">
+                    <div class="form-4-bg">
+                        <p class="form-4-title">
+                            Верь в себя, у тебя
+                            <span>всё</span> получится!
+                        </p>
+                        <p class="form-4-text">Количество мест ограничено</p>
+                        <form
+                            class="form-4"
+                            id="form-4"
+                            method="POST"
+                            action="send.php"
+                        >
+                            <div class="row inputs-wrapper">
+                                <input
+                                    required
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    class="form-input"
+                                    placeholder="Имя"
+                                />
+                                <div class="form-input-wrapper">
+                                    <input
+                                        required
+                                        type="tel"
+                                        name="phone4"
+                                        id="phone4"
+                                        class="form-input"
+                                        placeholder="Телефон"
+                                    />
+                                    <p
+                                        class="form-phone-number-output"
+                                        id="output"
+                                    ></p>
+                                </div>
+                                <input
+                                    required
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    class="form-input"
+                                    placeholder="Email"
+                                />
+                                <button class="form-btn" type="submit">
+                                    Записаться на занятие<span></span>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </section>
