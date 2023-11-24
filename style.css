@@ -1071,12 +1071,16 @@ body {
 }
 .main .coaches-section .coaches-slider {
   margin-top: 40px;
+  overflow: hidden;
+}
+.main .coaches-section .coaches-slider .coaches-wrapper {
+  display: flex;
 }
 .main .coaches-section .coaches-slider .slider-item {
   line-height: 23px;
   color: #000000;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .main .coaches-section .coaches-slider .slider-item .coach-photo {
   width: 120px;
