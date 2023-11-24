@@ -348,9 +348,11 @@ body {
 }
 .main .for-who-section .for-who-wrapper .for-who-item .for-who-item-img-3 {
   background-image: url(images/for-who-img-3.svg);
+  margin-left: -10px;
 }
 .main .for-who-section .for-who-wrapper .for-who-item .for-who-item-img-4 {
   background-image: url(images/for-who-img-4.svg);
+  margin-left: -10px;
 }
 .main .for-who-section .for-who-wrapper .for-who-item .for-who-item-text {
   font-size: 20px;
