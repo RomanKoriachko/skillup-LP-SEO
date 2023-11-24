@@ -222,6 +222,8 @@ $(".counts").each(function (index, element) {
     });
 });
 
+// Marquee coaches
+
 $(".marquee").marquee({
     duration: 30000,
     delayBeforeStart: 0,
