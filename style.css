@@ -1071,10 +1071,6 @@ body {
 }
 .main .coaches-section .coaches-slider {
   margin-top: 40px;
-  overflow: hidden;
-}
-.main .coaches-section .coaches-slider .coaches-wrapper {
-  display: flex;
 }
 .main .coaches-section .coaches-slider .slider-item {
   line-height: 23px;
@@ -1109,6 +1105,24 @@ body {
 }
 .main .coaches-section .coaches-slider .slider-item-5 .coach-photo {
   background-image: url(images/coach-photo-5.png);
+}
+.main .coaches-section .coaches-slider .slick-prev:before,
+.main .coaches-section .coaches-slider .slick-next:before {
+  font-size: 30px;
+  color: #000000;
+}
+.main .coaches-section .coaches-slider .slick-prev,
+.main .coaches-section .coaches-slider .slick-next {
+  top: 110%;
+  width: 30px;
+  height: 30px;
+  z-index: 100;
+}
+.main .coaches-section .coaches-slider .slick-prev {
+  left: 37%;
+}
+.main .coaches-section .coaches-slider .slick-next {
+  right: 37%;
 }
 .main .coaches-section .coaches-slider .slick-dots {
   bottom: -45px;

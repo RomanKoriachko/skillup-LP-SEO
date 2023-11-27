@@ -89,17 +89,17 @@ for (let i = 0; i < questionBtn.length; i++) {
 
 // Sliders
 
-// $(document).ready(function () {
-//     $(".coaches-slider").slick({
-//         arrows: false,
-//         slidesToShow: 3,
-//         slidesToScroll: 1,
-//         dots: true,
-//         infinite: true,
-//         autoplay: true,
-//         autoplaySpeed: 5000,
-//     });
-// });
+$(document).ready(function () {
+    $(".coaches-slider").slick({
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+    });
+});
 
 $(document).ready(function () {
     $(".companies-slider").slick({
@@ -224,11 +224,11 @@ $(".counts").each(function (index, element) {
 
 // Marquee coaches
 
-$(".marquee").marquee({
-    duration: 30000,
-    delayBeforeStart: 0,
-    direction: "left",
-    duplicated: true,
-    pauseOnHover: true,
-    startVisible: true,
-});
+// $(".marquee").marquee({
+//     duration: 30000,
+//     delayBeforeStart: 0,
+//     direction: "left",
+//     duplicated: true,
+//     pauseOnHover: true,
+//     startVisible: true,
+// });
