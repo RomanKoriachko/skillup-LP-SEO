@@ -52,9 +52,11 @@ body {
         bottom: 0;
         transform: skewX(-45deg) scale(0, 1);
     }
-    &:hover::after {
-        transition: all 0.3s ease-out;
-        transform: skewX(-45deg) scale(1, 1);
+    @media (hover: hover) {
+        &:hover::after {
+            transition: all 0.3s ease-out;
+            transform: skewX(-45deg) scale(1, 1);
+        }
     }
 }
 
@@ -440,6 +442,7 @@ body {
         background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
         padding-top: 150px;
         padding-bottom: 90px;
+        overflow: hidden;
         .opportunities-wrapper {
             gap: 32px;
         }
@@ -1323,6 +1326,11 @@ body {
                 }
             }
         }
+        .opportunities-section {
+            .opportunities-title {
+                width: 60%;
+            }
+        }
     }
 }
 
@@ -1408,6 +1416,45 @@ body {
                 .number-item-text {
                     font-size: 20px;
                     line-height: 24px;
+                }
+            }
+        }
+        .form-1-section {
+            padding-top: 60px;
+            .form-1-wrapper {
+                flex-direction: column;
+                .form-1-description {
+                    width: 100%;
+                    .form-1-description-title-wrapper {
+                        .arrow-img {
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+                .form-1 {
+                    width: 100%;
+                    max-width: 500px;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .opportunities-section {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            .opportunities-wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+            .opportunities-title {
+                width: 100%;
+                text-align: center;
+            }
+            .opportunities-logo-wrapper {
+                width: 100%;
+                margin-top: 32px;
+                .opportunities-logo {
+                    background-position: center;
+                    margin-bottom: 16px;
                 }
             }
         }
@@ -1546,6 +1593,35 @@ body {
             padding-bottom: 60px;
             .numbers-title {
                 margin-bottom: 24px;
+            }
+        }
+        .form-1-section {
+            padding-top: 24px;
+            padding-bottom: 24px;
+            .form-1-wrapper {
+                gap: 24px;
+                .form-1-description {
+                    .form-1-description-title-wrapper {
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+        }
+        .opportunities-section {
+            padding: 32px 0px;
+            .opportunities-title {
+                font-size: 36px;
+                line-height: 43px;
+            }
+            .opportunities-wrapper {
+                gap: 0px;
+            }
+            .opportunities-logo-wrapper {
+                margin-top: 0;
+                .opportunities-logo {
+                    width: 200px;
+                    margin: 0 auto;
+                }
             }
         }
     }

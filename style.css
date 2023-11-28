@@ -204,9 +204,11 @@ body {
   bottom: 0;
   transform: skewX(-45deg) scale(0, 1);
 }
-.header .registration-btn:hover::after {
-  transition: all 0.3s ease-out;
-  transform: skewX(-45deg) scale(1, 1);
+@media (hover: hover) {
+  .header .registration-btn:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+  }
 }
 .header .registration-btn::after {
   background: rgba(250, 39, 2, 0.1764705882);
@@ -331,9 +333,11 @@ body {
   bottom: 0;
   transform: skewX(-45deg) scale(0, 1);
 }
-.main .introduce-section .introduce-wrapper .introduce-btn:hover::after {
-  transition: all 0.3s ease-out;
-  transform: skewX(-45deg) scale(1, 1);
+@media (hover: hover) {
+  .main .introduce-section .introduce-wrapper .introduce-btn:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+  }
 }
 .main .for-who-section {
   padding: 60px 0px 80px;
@@ -616,14 +620,17 @@ body {
   bottom: 0;
   transform: skewX(-45deg) scale(0, 1);
 }
-.main .form-1-section .form-1-wrapper .form-1 .form-btn:hover::after {
-  transition: all 0.3s ease-out;
-  transform: skewX(-45deg) scale(1, 1);
+@media (hover: hover) {
+  .main .form-1-section .form-1-wrapper .form-1 .form-btn:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+  }
 }
 .main .opportunities-section {
   background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
   padding-top: 150px;
   padding-bottom: 90px;
+  overflow: hidden;
 }
 .main .opportunities-section .opportunities-wrapper {
   gap: 32px;
@@ -769,9 +776,11 @@ body {
   bottom: 0;
   transform: skewX(-45deg) scale(0, 1);
 }
-.main .form-2-section .form-2 .form-btn:hover::after {
-  transition: all 0.3s ease-out;
-  transform: skewX(-45deg) scale(1, 1);
+@media (hover: hover) {
+  .main .form-2-section .form-2 .form-btn:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+  }
 }
 .main .form-2-section .form-2-text {
   color: #333142;
@@ -1043,9 +1052,11 @@ body {
   bottom: 0;
   transform: skewX(-45deg) scale(0, 1);
 }
-.main .form-3-section .form-3 .inputs-wrapper .form-btn:hover::after {
-  transition: all 0.3s ease-out;
-  transform: skewX(-45deg) scale(1, 1);
+@media (hover: hover) {
+  .main .form-3-section .form-3 .inputs-wrapper .form-btn:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+  }
 }
 .main .photo-section {
   color: #0d1a30;
@@ -1217,9 +1228,11 @@ body {
   bottom: 0;
   transform: skewX(-45deg) scale(0, 1);
 }
-.main .questions-section .questions-wrapper .questions-description .questions-btn:hover::after {
-  transition: all 0.3s ease-out;
-  transform: skewX(-45deg) scale(1, 1);
+@media (hover: hover) {
+  .main .questions-section .questions-wrapper .questions-description .questions-btn:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+  }
 }
 .main .questions-section .questions-wrapper .questions-content {
   max-width: 780px;
@@ -1478,9 +1491,11 @@ body {
   bottom: 0;
   transform: skewX(-45deg) scale(0, 1);
 }
-.main .form-4-section .form-4 .inputs-wrapper .form-btn:hover::after {
-  transition: all 0.3s ease-out;
-  transform: skewX(-45deg) scale(1, 1);
+@media (hover: hover) {
+  .main .form-4-section .form-4 .inputs-wrapper .form-btn:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+  }
 }
 
 .footer {
@@ -1585,6 +1600,9 @@ body {
   .main .introduce-section .introduce-wrapper .introduce-info-wrapper {
     gap: 50px;
   }
+  .main .opportunities-section .opportunities-title {
+    width: 60%;
+  }
 }
 @media (max-width: 992px) {
   .container {
@@ -1650,6 +1668,43 @@ body {
   .main .numbers-section .number-wrapper .number-item-text {
     font-size: 20px;
     line-height: 24px;
+  }
+  .main .form-1-section {
+    padding-top: 60px;
+  }
+  .main .form-1-section .form-1-wrapper {
+    flex-direction: column;
+  }
+  .main .form-1-section .form-1-wrapper .form-1-description {
+    width: 100%;
+  }
+  .main .form-1-section .form-1-wrapper .form-1-description .form-1-description-title-wrapper .arrow-img {
+    transform: rotate(90deg);
+  }
+  .main .form-1-section .form-1-wrapper .form-1 {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .main .opportunities-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .main .opportunities-section .opportunities-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .opportunities-section .opportunities-title {
+    width: 100%;
+    text-align: center;
+  }
+  .main .opportunities-section .opportunities-logo-wrapper {
+    width: 100%;
+    margin-top: 32px;
+  }
+  .main .opportunities-section .opportunities-logo-wrapper .opportunities-logo {
+    background-position: center;
+    margin-bottom: 16px;
   }
 }
 @media (max-width: 576px) {
@@ -1770,5 +1825,32 @@ body {
   }
   .main .numbers-section .numbers-title {
     margin-bottom: 24px;
+  }
+  .main .form-1-section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .main .form-1-section .form-1-wrapper {
+    gap: 24px;
+  }
+  .main .form-1-section .form-1-wrapper .form-1-description .form-1-description-title-wrapper {
+    margin-bottom: 16px;
+  }
+  .main .opportunities-section {
+    padding: 32px 0px;
+  }
+  .main .opportunities-section .opportunities-title {
+    font-size: 36px;
+    line-height: 43px;
+  }
+  .main .opportunities-section .opportunities-wrapper {
+    gap: 0px;
+  }
+  .main .opportunities-section .opportunities-logo-wrapper {
+    margin-top: 0;
+  }
+  .main .opportunities-section .opportunities-logo-wrapper .opportunities-logo {
+    width: 200px;
+    margin: 0 auto;
   }
 }
