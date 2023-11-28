@@ -156,6 +156,7 @@ body {
   background: rgba(255, 255, 255, 0.6);
   position: absolute;
   width: 100%;
+  z-index: 100;
 }
 .header .header-wrapper {
   align-items: center;
@@ -225,13 +226,26 @@ body {
 .main .introduce-section {
   padding: 170px 0px 70px;
   background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
+  position: relative;
+}
+.main .introduce-section .intrtoduce-section-bg {
+  background-image: url(images/introduce-section-img.png);
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  max-width: 1440px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
 }
 .main .introduce-section .introduce-wrapper {
   align-items: center;
   justify-content: space-between;
-  background-image: url(images/introduce-section-img.png);
-  background-position: 100% 50%;
-  background-repeat: no-repeat;
+}
+.main .introduce-section .introduce-wrapper .introduce-text {
+  width: 60%;
+  z-index: 2;
 }
 .main .introduce-section .introduce-wrapper .introduce-subtitle {
   font-size: 30px;
@@ -1475,7 +1489,7 @@ body {
 }
 .footer .footer-contacts-wrapper {
   justify-content: space-evenly;
-  padding-bottom: 33px;
+  padding-bottom: 20px;
 }
 .footer .footer-contacts-wrapper .footer-contacts-title {
   color: #4ebd09;
@@ -1485,10 +1499,14 @@ body {
 }
 .footer .footer-contacts-wrapper .footer-contacts-subtitle {
   color: #989898;
+  margin: 5px 0px;
 }
 .footer .footer-contacts-wrapper .footer-phones-list {
   margin-left: 20px;
   margin-bottom: 18px;
+}
+.footer .footer-contacts-wrapper .footer-phones-list li:first-child {
+  text-decoration: underline;
 }
 .footer .footer-contacts-wrapper .footer-phones-list > li {
   line-height: 23px;
@@ -1557,5 +1575,75 @@ body {
   }
   .footer .footer-underline .footer-link-wrapper .footer-link-img:hover {
     transform: scale(120%);
+  }
+}
+@media (max-width: 1200px) {
+  .header .header-menu {
+    gap: 14px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-info-wrapper {
+    gap: 50px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    padding: 0px 60px;
+  }
+  .small-container {
+    padding: 0px 60px;
+  }
+  .header .header-logo {
+    width: 100px;
+  }
+  .header .header-menu {
+    display: none;
+  }
+  .header .registration-btn {
+    display: none;
+  }
+  .main .introduce-section .intrtoduce-section-bg {
+    display: none;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-text {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    padding: 0px 16px;
+  }
+  .small-container {
+    padding: 0px 16px;
+  }
+  .header {
+    padding: 5px 0px;
+  }
+  .header .header-logo {
+    width: 73px;
+  }
+  .main .introduce-section {
+    padding-top: 80px;
+    padding-bottom: 32px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-title {
+    font-size: 36px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-list {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-info-wrapper {
+    gap: 5px;
+    justify-content: space-between;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-info-wrapper .introduce-info-item .introduce-info-img {
+    width: 32px;
+    height: 32px;
+    background-size: 80%;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-btn {
+    width: 100%;
   }
 }
