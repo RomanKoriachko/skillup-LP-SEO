@@ -1607,6 +1607,30 @@ body {
   .main .introduce-section .introduce-wrapper .introduce-text {
     width: 100%;
   }
+  .main .for-who-section .for-who-wrapper {
+    flex-wrap: wrap;
+  }
+  .main .for-who-section .for-who-wrapper .for-who-item {
+    width: 45%;
+  }
+  .main .demand-section .demand-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .main .demand-section .demand-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .demand-section .demand-text-wrapper {
+    width: 100%;
+  }
+  .main .demand-section .demand-text-wrapper .demand-item-title {
+    text-align: center;
+  }
+  .main .demand-section .demand-img {
+    max-width: 500px;
+    min-width: 320px;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -1620,6 +1644,10 @@ body {
   }
   .header .header-logo {
     width: 73px;
+  }
+  .main .main-title {
+    font-size: 24px;
+    line-height: 31px;
   }
   .main .introduce-section {
     padding-top: 80px;
@@ -1645,5 +1673,46 @@ body {
   }
   .main .introduce-section .introduce-wrapper .introduce-btn {
     width: 100%;
+  }
+  .main .for-who-section {
+    padding-top: 24px;
+    padding-bottom: 56px;
+    background-color: #f9f9f9;
+  }
+  .main .for-who-section .for-who-title {
+    margin-bottom: 36px;
+  }
+  .main .for-who-section .for-who-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .main .for-who-section .for-who-wrapper .for-who-item {
+    text-align: center;
+    width: 100%;
+  }
+  .main .for-who-section .for-who-wrapper .for-who-item .for-who-item-img {
+    margin: 0 auto;
+  }
+  .main .demand-section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .main .demand-section .demand-header {
+    margin-bottom: 32px;
+  }
+  .main .demand-section .demand-wrapper {
+    gap: 16px;
+  }
+  .main .demand-section .demand-item {
+    gap: 16px;
+  }
+  .main .demand-section .demand-img {
+    width: 100%;
+  }
+  .main .demand-section .demand-text-wrapper .demand-item-title {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }

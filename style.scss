@@ -1358,6 +1358,35 @@ body {
                 }
             }
         }
+        .for-who-section {
+            .for-who-wrapper {
+                flex-wrap: wrap;
+                .for-who-item {
+                    width: 45%;
+                }
+            }
+        }
+        .demand-section {
+            .demand-header {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            .demand-item {
+                flex-direction: column;
+                align-items: center;
+            }
+            .demand-text-wrapper {
+                width: 100%;
+                .demand-item-title {
+                    text-align: center;
+                }
+            }
+            .demand-img {
+                max-width: 500px;
+                min-width: 320px;
+                // width: 500px;
+            }
+        }
     }
 }
 
@@ -1379,6 +1408,10 @@ body {
     }
 
     .main {
+        .main-title {
+            font-size: 24px;
+            line-height: 31px;
+        }
         .introduce-section {
             padding-top: 80px;
             padding-bottom: 32px;
@@ -1405,6 +1438,49 @@ body {
                 }
                 .introduce-btn {
                     width: 100%;
+                }
+            }
+        }
+        .for-who-section {
+            padding-top: 24px;
+            padding-bottom: 56px;
+            background-color: #f9f9f9;
+            .for-who-title {
+                margin-bottom: 36px;
+            }
+            .for-who-wrapper {
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                .for-who-item {
+                    text-align: center;
+                    width: 100%;
+                    .for-who-item-img {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        .demand-section {
+            padding-top: 24px;
+            padding-bottom: 24px;
+            .demand-header {
+                margin-bottom: 32px;
+            }
+            .demand-wrapper {
+                gap: 16px;
+            }
+            .demand-item {
+                gap: 16px;
+            }
+            .demand-img {
+                width: 100%;
+            }
+            .demand-text-wrapper {
+                .demand-item-title {
+                    margin-bottom: 16px;
+                    font-size: 20px;
+                    line-height: 24px;
                 }
             }
         }
