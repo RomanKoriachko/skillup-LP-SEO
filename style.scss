@@ -348,6 +348,7 @@ body {
         }
         .number-wrapper {
             justify-content: space-between;
+            gap: 15px;
             .number-item {
                 text-align: center;
                 max-width: 320px;
@@ -1387,6 +1388,29 @@ body {
                 // width: 500px;
             }
         }
+        .salary-section {
+            .salary-wrapper {
+                flex-direction: column;
+                .salary-text-title {
+                    text-align: center;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+        .numbers-section {
+            .numbers-title {
+                text-align: center;
+            }
+            .number-wrapper {
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                .number-item-text {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+        }
     }
 }
 
@@ -1482,6 +1506,46 @@ body {
                     font-size: 20px;
                     line-height: 24px;
                 }
+            }
+        }
+        .salary-section {
+            padding-top: 11px;
+            padding-bottom: 46px;
+            .salary-wrapper {
+                gap: 10px;
+            }
+            .salary-diagram {
+                gap: 10px;
+                .salary-diagram-item {
+                    .diagram-scale-wrapper {
+                        font-size: 10px;
+                    }
+                    .mix-max-wrapper {
+                        .diagram-item-salary {
+                            font-size: 10px;
+                            line-height: 12px;
+                            font-weight: 700;
+                        }
+                        .diagram-scale-min,
+                        .diagram-scale-max {
+                            width: 37px;
+                        }
+                    }
+                    .diagram-description {
+                        font-size: 10px;
+                        padding-top: 8px;
+                        .diagram-item-name {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .numbers-section {
+            padding-top: 21px;
+            padding-bottom: 60px;
+            .numbers-title {
+                margin-bottom: 24px;
             }
         }
     }

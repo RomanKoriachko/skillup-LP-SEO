@@ -499,6 +499,7 @@ body {
 }
 .main .numbers-section .number-wrapper {
   justify-content: space-between;
+  gap: 15px;
 }
 .main .numbers-section .number-wrapper .number-item {
   text-align: center;
@@ -1631,6 +1632,25 @@ body {
     max-width: 500px;
     min-width: 320px;
   }
+  .main .salary-section .salary-wrapper {
+    flex-direction: column;
+  }
+  .main .salary-section .salary-wrapper .salary-text-title {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .main .numbers-section .numbers-title {
+    text-align: center;
+  }
+  .main .numbers-section .number-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .main .numbers-section .number-wrapper .number-item-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -1714,5 +1734,41 @@ body {
     margin-bottom: 16px;
     font-size: 20px;
     line-height: 24px;
+  }
+  .main .salary-section {
+    padding-top: 11px;
+    padding-bottom: 46px;
+  }
+  .main .salary-section .salary-wrapper {
+    gap: 10px;
+  }
+  .main .salary-section .salary-diagram {
+    gap: 10px;
+  }
+  .main .salary-section .salary-diagram .salary-diagram-item .diagram-scale-wrapper {
+    font-size: 10px;
+  }
+  .main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper .diagram-item-salary {
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 700;
+  }
+  .main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper .diagram-scale-min,
+  .main .salary-section .salary-diagram .salary-diagram-item .mix-max-wrapper .diagram-scale-max {
+    width: 37px;
+  }
+  .main .salary-section .salary-diagram .salary-diagram-item .diagram-description {
+    font-size: 10px;
+    padding-top: 8px;
+  }
+  .main .salary-section .salary-diagram .salary-diagram-item .diagram-description .diagram-item-name {
+    margin-bottom: 0;
+  }
+  .main .numbers-section {
+    padding-top: 21px;
+    padding-bottom: 60px;
+  }
+  .main .numbers-section .numbers-title {
+    margin-bottom: 24px;
   }
 }
