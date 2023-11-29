@@ -221,14 +221,3 @@ function changeVideo(videoNumber) {
     }
     mainVideo.src = `https://www.youtube.com/embed/${videoNumber}`;
 }
-
-// Marquee coaches
-
-// $(".marquee").marquee({
-//     duration: 30000,
-//     delayBeforeStart: 0,
-//     direction: "left",
-//     duplicated: true,
-//     pauseOnHover: true,
-//     startVisible: true,
-// });
