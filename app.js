@@ -132,10 +132,10 @@ function validatePhone(id, formSelector) {
     input.addEventListener("keyup", reset);
 }
 
-// validatePhone("#phone1", "#form-1");
-// validatePhone("#phone2", "#form-2");
-// validatePhone("#phone3", "#form-3");
-// validatePhone("#phone4", "#form-4");
+validatePhone("#phone1", "#form-1");
+validatePhone("#phone2", "#form-2");
+validatePhone("#phone3", "#form-3");
+validatePhone("#phone4", "#form-4");
 
 // Show cource items
 
