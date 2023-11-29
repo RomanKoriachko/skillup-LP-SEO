@@ -1230,12 +1230,16 @@ body {
   padding-top: 70px;
   padding-bottom: 30px;
   cursor: url(images/mouse-pointer-black.svg), auto;
+  color: #0d1a30;
+  overflow: hidden;
 }
 .main .questions-section .questions-wrapper {
   justify-content: space-between;
+  gap: 90px;
 }
 .main .questions-section .questions-wrapper .questions-description {
-  width: 320px;
+  min-width: 320px;
+  max-width: 320px;
 }
 .main .questions-section .questions-wrapper .questions-description .questions-text {
   line-height: 23px;
@@ -1285,6 +1289,7 @@ body {
 .main .questions-section .questions-wrapper .questions-content .questions-item .question-header-wrapper {
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
   padding: 20px 28px;
   border: 2px solid #989898;
   border-radius: 8px;
@@ -1300,8 +1305,8 @@ body {
   background-image: url(images/plus-circle-green.svg);
   background-position: center;
   background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
 }
 .main .questions-section .questions-wrapper .questions-content .questions-item .question-header-wrapper.open {
   background-color: #0d1a30;
@@ -1845,6 +1850,20 @@ body {
     margin-bottom: 16px;
     text-align: center;
   }
+  .main .questions-section .questions-wrapper {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .main .questions-section .questions-wrapper .questions-description {
+    min-width: none;
+    max-width: none;
+  }
+  .main .questions-section .questions-wrapper .questions-description .questions-btn {
+    width: 330px;
+  }
+  .main .questions-section .questions-wrapper .questions-content {
+    max-width: 100%;
+  }
 }
 @media (max-width: 700px) {
   .main .benefits-section .benefits-wrapper {
@@ -2068,5 +2087,19 @@ body {
   .main .coaches-section .coaches-tablet-wrapper {
     margin-top: 24px;
     grid-template-columns: 1fr;
+  }
+  .main .questions-section {
+    padding: 23px 0px;
+  }
+  .main .questions-section .questions-title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 52px;
+  }
+  .main .questions-section .questions-wrapper .questions-description .questions-text {
+    text-align: center;
+  }
+  .main .questions-section .questions-wrapper .questions-description .questions-btn {
+    width: 100%;
   }
 }

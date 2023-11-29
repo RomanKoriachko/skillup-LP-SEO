@@ -962,10 +962,14 @@ body {
         padding-top: 70px;
         padding-bottom: 30px;
         cursor: url(images/mouse-pointer-black.svg), auto;
+        color: #0d1a30;
+        overflow: hidden;
         .questions-wrapper {
             justify-content: space-between;
+            gap: 90px;
             .questions-description {
-                width: 320px;
+                min-width: 320px;
+                max-width: 320px;
                 .questions-text {
                     line-height: 23px;
                     margin-top: 8px;
@@ -983,11 +987,11 @@ body {
                     .question-header-wrapper {
                         align-items: center;
                         justify-content: space-between;
+                        gap: 10px;
                         padding: 20px 28px;
                         border: 2px solid #989898;
                         border-radius: 8px;
                         transition: all 0.5s;
-                        // cursor: pointer;
                         .question-header {
                             font-size: 20px;
                             font-weight: 700;
@@ -998,8 +1002,8 @@ body {
                             background-image: url(images/plus-circle-green.svg);
                             background-position: center;
                             background-repeat: no-repeat;
-                            width: 24px;
-                            height: 24px;
+                            min-width: 24px;
+                            min-height: 24px;
                         }
                     }
                     .question-header-wrapper.open {
@@ -1581,6 +1585,22 @@ body {
                 }
             }
         }
+        .questions-section {
+            .questions-wrapper {
+                flex-direction: column;
+                gap: 24px;
+                .questions-description {
+                    min-width: none;
+                    max-width: none;
+                    .questions-btn {
+                        width: 330px;
+                    }
+                }
+                .questions-content {
+                    max-width: 100%;
+                }
+            }
+        }
     }
 }
 
@@ -1833,6 +1853,24 @@ body {
             .coaches-tablet-wrapper {
                 margin-top: 24px;
                 grid-template-columns: 1fr;
+            }
+        }
+        .questions-section {
+            padding: 23px 0px;
+            .questions-title {
+                text-align: center;
+                font-size: 36px;
+                line-height: 52px;
+            }
+            .questions-wrapper {
+                .questions-description {
+                    .questions-text {
+                        text-align: center;
+                    }
+                    .questions-btn {
+                        width: 100%;
+                    }
+                }
             }
         }
     }
