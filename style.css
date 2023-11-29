@@ -675,6 +675,17 @@ body {
   padding: 32px;
   border: 1px solid #989898;
   border-radius: 8px;
+  transition: 0.3s all;
+}
+.main .benefits-section .benefits-wrapper .benefit-item:hover {
+  cursor: url(images/mouse-pointer-white.svg), auto;
+  background-color: #17161f;
+}
+.main .benefits-section .benefits-wrapper .benefit-item:hover .benefit-item-title {
+  color: #4ebd09;
+}
+.main .benefits-section .benefits-wrapper .benefit-item:hover .benefit-item-text {
+  color: white;
 }
 .main .benefits-section .benefits-wrapper .benefit-item .benefit-item-title {
   font-size: 20px;
@@ -692,25 +703,28 @@ body {
   padding-top: 43px;
   padding-bottom: 60px;
 }
+.main .form-2-section .tablet-title {
+  display: none;
+}
 .main .form-2-section .form-2-wrapper {
   align-items: center;
   gap: 96px;
 }
-.main .form-2-section .form-2 {
-  width: 50%;
-}
-.main .form-2-section .form-2 .text-and-arrow-wrapper {
+.main .form-2-section .text-and-arrow-wrapper {
   align-items: center;
   gap: 10px;
   margin-bottom: 42px;
 }
-.main .form-2-section .form-2 .text-and-arrow-wrapper .arrow-img {
+.main .form-2-section .arrow-img {
   background-image: url(images/arrow-right-black.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 24px;
   height: 24px;
   margin-top: 10px;
+}
+.main .form-2-section .form-2 {
+  width: 50%;
 }
 .main .form-2-section .form-2 .form-input {
   width: 100%;
@@ -1573,19 +1587,6 @@ body {
   .header .header-menu .header-menu-item:hover {
     color: #4d4d4d;
   }
-  .main .benefits-section .benefits-wrapper .benefit-item {
-    transition: 0.3s all;
-  }
-  .main .benefits-section .benefits-wrapper .benefit-item:hover {
-    cursor: url(images/mouse-pointer-white.svg), auto;
-    background-color: #17161f;
-  }
-  .main .benefits-section .benefits-wrapper .benefit-item:hover .benefit-item-title {
-    color: #4ebd09;
-  }
-  .main .benefits-section .benefits-wrapper .benefit-item:hover .benefit-item-text {
-    color: white;
-  }
   .footer .footer-underline .footer-link-wrapper .footer-link-img {
     transition: all 0.3s;
   }
@@ -1705,6 +1706,36 @@ body {
   .main .opportunities-section .opportunities-logo-wrapper .opportunities-logo {
     background-position: center;
     margin-bottom: 16px;
+  }
+  .main .benefits-section .benefits-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .main .form-2-section .tablet-title {
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 33px;
+  }
+  .main .form-2-section .tablet-title .arrow-img {
+    transform: rotate(90deg);
+  }
+  .main .form-2-section .desktop-title {
+    display: none;
+  }
+  .main .form-2-section .form-2-wrapper {
+    flex-direction: column-reverse;
+    gap: 44px;
+  }
+  .main .form-2-section .form-2 {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+@media (max-width: 700px) {
+  .main .benefits-section .benefits-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 }
 @media (max-width: 576px) {
@@ -1852,5 +1883,18 @@ body {
   .main .opportunities-section .opportunities-logo-wrapper .opportunities-logo {
     width: 200px;
     margin: 0 auto;
+  }
+  .main .benefits-section {
+    padding-top: 24px;
+    padding-bottom: 57px;
+  }
+  .main .form-2-section {
+    padding: 24px 0px;
+  }
+  .main .form-2-section .tablet-title {
+    margin: 0px;
+  }
+  .main .form-2-section .form-2-wrapper {
+    align-items: flex-start;
   }
 }
