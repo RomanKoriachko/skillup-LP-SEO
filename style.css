@@ -1613,11 +1613,11 @@ body {
 }
 .footer .footer-link-wrapper .footer-link-img-2,
 .footer .footer-mobile-link-wrapper .footer-link-img-2 {
-  background-image: url(images/youtube.svg);
+  background-image: url(images/telegram.svg);
 }
 .footer .footer-link-wrapper .footer-link-img-3,
 .footer .footer-mobile-link-wrapper .footer-link-img-3 {
-  background-image: url(images/linkedin.svg);
+  background-image: url(images/instagram.svg);
 }
 .footer .footer-mobile-link-wrapper {
   display: none;
