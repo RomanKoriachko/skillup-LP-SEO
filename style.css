@@ -1106,92 +1106,122 @@ body {
   color: #0d1a30;
   padding-top: 80px;
   padding-bottom: 40px;
+  position: relative;
 }
 .main .coaches-section .coaches-title {
   text-align: center;
 }
-.main .coaches-section .coaches-slider {
-  margin-top: 40px;
+.main .coaches-section .coaches-tablet-wrapper {
+  display: none;
 }
-.main .coaches-section .coaches-slider .slider-item {
+.main .coaches-section .coaches-slider,
+.main .coaches-section .coaches-tablet-wrapper {
+  margin-top: 40px;
+  position: static;
+}
+.main .coaches-section .coaches-slider .slider-item,
+.main .coaches-section .coaches-tablet-wrapper .slider-item {
   line-height: 23px;
   color: #000000;
   margin-left: 20px;
   margin-right: 20px;
 }
-.main .coaches-section .coaches-slider .slider-item .coach-photo {
+.main .coaches-section .coaches-slider .slider-item .coach-photo,
+.main .coaches-section .coaches-tablet-wrapper .slider-item .coach-photo {
   width: 120px;
   height: 120px;
   margin: 0 auto;
   margin-bottom: 24px;
 }
-.main .coaches-section .coaches-slider .slider-item .coach-name {
+.main .coaches-section .coaches-slider .slider-item .coach-name,
+.main .coaches-section .coaches-tablet-wrapper .slider-item .coach-name {
   font-weight: 700;
 }
-.main .coaches-section .coaches-slider .slider-item .coach-expirience {
+.main .coaches-section .coaches-slider .slider-item .coach-expirience,
+.main .coaches-section .coaches-tablet-wrapper .slider-item .coach-expirience {
   color: #4d4d4d;
   margin-bottom: 24px;
 }
-.main .coaches-section .coaches-slider .slider-item-1 .coach-photo {
+.main .coaches-section .coaches-slider .slider-item-1 .coach-photo,
+.main .coaches-section .coaches-tablet-wrapper .slider-item-1 .coach-photo {
   background-image: url(images/coach-photo-1.png);
 }
-.main .coaches-section .coaches-slider .slider-item-2 .coach-photo {
+.main .coaches-section .coaches-slider .slider-item-2 .coach-photo,
+.main .coaches-section .coaches-tablet-wrapper .slider-item-2 .coach-photo {
   background-image: url(images/coach-photo-2.png);
 }
-.main .coaches-section .coaches-slider .slider-item-3 .coach-photo {
+.main .coaches-section .coaches-slider .slider-item-3 .coach-photo,
+.main .coaches-section .coaches-tablet-wrapper .slider-item-3 .coach-photo {
   background-image: url(images/coach-photo-3.png);
 }
-.main .coaches-section .coaches-slider .slider-item-4 .coach-photo {
+.main .coaches-section .coaches-slider .slider-item-4 .coach-photo,
+.main .coaches-section .coaches-tablet-wrapper .slider-item-4 .coach-photo {
   background-image: url(images/coach-photo-4.png);
 }
-.main .coaches-section .coaches-slider .slider-item-5 .coach-photo {
+.main .coaches-section .coaches-slider .slider-item-5 .coach-photo,
+.main .coaches-section .coaches-tablet-wrapper .slider-item-5 .coach-photo {
   background-image: url(images/coach-photo-5.png);
 }
 .main .coaches-section .coaches-slider .slick-prev:before,
-.main .coaches-section .coaches-slider .slick-next:before {
+.main .coaches-section .coaches-slider .slick-next:before,
+.main .coaches-section .coaches-tablet-wrapper .slick-prev:before,
+.main .coaches-section .coaches-tablet-wrapper .slick-next:before {
   font-size: 30px;
   color: #000000;
 }
 .main .coaches-section .coaches-slider .slick-prev,
-.main .coaches-section .coaches-slider .slick-next {
-  top: 110%;
+.main .coaches-section .coaches-slider .slick-next,
+.main .coaches-section .coaches-tablet-wrapper .slick-prev,
+.main .coaches-section .coaches-tablet-wrapper .slick-next {
+  top: auto;
+  bottom: -5px;
   width: 30px;
   height: 30px;
   z-index: 100;
 }
-.main .coaches-section .coaches-slider .slick-prev {
+.main .coaches-section .coaches-slider .slick-prev,
+.main .coaches-section .coaches-tablet-wrapper .slick-prev {
   left: 37%;
 }
-.main .coaches-section .coaches-slider .slick-next {
+.main .coaches-section .coaches-slider .slick-next,
+.main .coaches-section .coaches-tablet-wrapper .slick-next {
   right: 37%;
 }
-.main .coaches-section .coaches-slider .slick-dots {
-  bottom: -45px;
+.main .coaches-section .coaches-slider .slick-dots,
+.main .coaches-section .coaches-tablet-wrapper .slick-dots {
+  bottom: 15px;
+  left: 0px;
 }
-.main .coaches-section .coaches-slider .slick-dots li {
+.main .coaches-section .coaches-slider .slick-dots li,
+.main .coaches-section .coaches-tablet-wrapper .slick-dots li {
   width: 16px;
   margin: 0 8px;
 }
-.main .coaches-section .coaches-slider .slick-dots li button {
+.main .coaches-section .coaches-slider .slick-dots li button,
+.main .coaches-section .coaches-tablet-wrapper .slick-dots li button {
   width: 16px;
   height: 16px;
   background-color: #989898;
   border-radius: 50%;
 }
-.main .coaches-section .coaches-slider .slick-dots li button::before {
+.main .coaches-section .coaches-slider .slick-dots li button::before,
+.main .coaches-section .coaches-tablet-wrapper .slick-dots li button::before {
   width: 16px;
   height: 16px;
   content: "";
 }
-.main .coaches-section .coaches-slider .slick-dots .slick-active {
+.main .coaches-section .coaches-slider .slick-dots .slick-active,
+.main .coaches-section .coaches-tablet-wrapper .slick-dots .slick-active {
   width: 20px;
 }
-.main .coaches-section .coaches-slider .slick-dots .slick-active button {
+.main .coaches-section .coaches-slider .slick-dots .slick-active button,
+.main .coaches-section .coaches-tablet-wrapper .slick-dots .slick-active button {
   width: 20px;
   height: 20px;
   background-color: #0d1a30;
 }
-.main .coaches-section .coaches-slider .slick-dots .slick-active button::before {
+.main .coaches-section .coaches-slider .slick-dots .slick-active button::before,
+.main .coaches-section .coaches-tablet-wrapper .slick-dots .slick-active button::before {
   width: 20px;
   height: 20px;
   content: "";
@@ -1804,6 +1834,17 @@ body {
     grid-row-start: 3;
     grid-row-end: 4;
   }
+  .main .coaches-section .coaches-slider {
+    display: none;
+  }
+  .main .coaches-section .coaches-tablet-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .main .coaches-section .coaches-tablet-wrapper .slider-item {
+    margin-bottom: 16px;
+    text-align: center;
+  }
 }
 @media (max-width: 700px) {
   .main .benefits-section .benefits-wrapper {
@@ -2020,5 +2061,12 @@ body {
   }
   .main .photo-section .photo-title {
     text-align: left;
+  }
+  .main .coaches-section {
+    padding: 32px 0px;
+  }
+  .main .coaches-section .coaches-tablet-wrapper {
+    margin-top: 24px;
+    grid-template-columns: 1fr;
   }
 }
