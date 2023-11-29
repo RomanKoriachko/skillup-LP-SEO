@@ -627,6 +627,7 @@ body {
                 .cource-content-item-name-wrapper {
                     align-items: center;
                     justify-content: space-between;
+                    gap: 10px;
                     font-size: 24px;
                     font-weight: 700;
                     line-height: 29px;
@@ -634,8 +635,8 @@ body {
                     z-index: 10;
                     cursor: pointer;
                     .plus-img {
-                        width: 24px;
-                        height: 24px;
+                        min-width: 24px;
+                        min-height: 24px;
                         background-image: url(images/plus-circle.svg);
                         background-position: center;
                         background-repeat: no-repeat;
@@ -1479,6 +1480,41 @@ body {
                 max-width: 500px;
             }
         }
+        .cource-section {
+            .cource-header-wrapper {
+                flex-direction: column;
+                gap: 16px;
+                margin-bottom: 40px;
+            }
+            .cource-description {
+                width: 100%;
+            }
+            .cource-content-wrapper {
+                .cource-content-item-text {
+                    > ul {
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+        .services-section {
+            .services-items-wrapper {
+                grid-template-columns: 1fr 1fr;
+                .services-item-1,
+                .services-item-3,
+                .services-item-5,
+                .services-item-7 {
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                }
+                .services-item-2,
+                .services-item-4,
+                .services-item-6 {
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                }
+            }
+        }
     }
 }
 
@@ -1667,6 +1703,46 @@ body {
             }
             .form-2-wrapper {
                 align-items: flex-start;
+            }
+        }
+        .cource-section {
+            padding-top: 32px;
+            padding-bottom: 24px;
+            .cource-header {
+                text-align: center;
+                font-size: 40px;
+                line-height: 48px;
+            }
+            .cource-description {
+                font-size: 16px;
+                line-height: 19px;
+            }
+            .cource-content-wrapper {
+                .cource-content-item {
+                    padding: 19px 21px;
+                    .cource-content-item-name-wrapper {
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+                }
+                .cource-content-item-text {
+                    font-size: 16px;
+                    line-height: 19px;
+                    p {
+                        margin-left: -25px;
+                    }
+                }
+            }
+        }
+        .services-section {
+            padding: 32px 0px;
+            .services-title {
+                margin-bottom: 20px;
+            }
+            .services-items-wrapper {
+                .services-item {
+                    height: 80px;
+                }
             }
         }
     }

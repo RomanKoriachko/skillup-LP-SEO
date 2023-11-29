@@ -854,6 +854,7 @@ body {
 .main .cource-section .cource-content-wrapper .cource-content-item .cource-content-item-name-wrapper {
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
@@ -862,8 +863,8 @@ body {
   cursor: pointer;
 }
 .main .cource-section .cource-content-wrapper .cource-content-item .cource-content-item-name-wrapper .plus-img {
-  width: 24px;
-  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
   background-image: url(images/plus-circle.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -1731,6 +1732,33 @@ body {
     width: 100%;
     max-width: 500px;
   }
+  .main .cource-section .cource-header-wrapper {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .main .cource-section .cource-description {
+    width: 100%;
+  }
+  .main .cource-section .cource-content-wrapper .cource-content-item-text > ul {
+    margin-left: 30px;
+  }
+  .main .services-section .services-items-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .main .services-section .services-items-wrapper .services-item-1,
+  .main .services-section .services-items-wrapper .services-item-3,
+  .main .services-section .services-items-wrapper .services-item-5,
+  .main .services-section .services-items-wrapper .services-item-7 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .main .services-section .services-items-wrapper .services-item-2,
+  .main .services-section .services-items-wrapper .services-item-4,
+  .main .services-section .services-items-wrapper .services-item-6 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }
 @media (max-width: 700px) {
   .main .benefits-section .benefits-wrapper {
@@ -1896,5 +1924,41 @@ body {
   }
   .main .form-2-section .form-2-wrapper {
     align-items: flex-start;
+  }
+  .main .cource-section {
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+  .main .cource-section .cource-header {
+    text-align: center;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .main .cource-section .cource-description {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .main .cource-section .cource-content-wrapper .cource-content-item {
+    padding: 19px 21px;
+  }
+  .main .cource-section .cource-content-wrapper .cource-content-item .cource-content-item-name-wrapper {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .main .cource-section .cource-content-wrapper .cource-content-item-text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .main .cource-section .cource-content-wrapper .cource-content-item-text p {
+    margin-left: -25px;
+  }
+  .main .services-section {
+    padding: 32px 0px;
+  }
+  .main .services-section .services-title {
+    margin-bottom: 20px;
+  }
+  .main .services-section .services-items-wrapper .services-item {
+    height: 80px;
   }
 }
