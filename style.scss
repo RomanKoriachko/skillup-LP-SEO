@@ -770,7 +770,7 @@ body {
             margin-top: 32px;
             .inputs-wrapper {
                 justify-content: center;
-                align-items: flex-start;
+                align-items: center;
                 gap: 21px;
                 .form-input,
                 .form-btn,
@@ -1515,6 +1515,55 @@ body {
                 }
             }
         }
+        .form-3-section {
+            .form-3-bg {
+                background-position: 50% 10%;
+            }
+            .form-3-title {
+                margin-left: 0;
+                margin-right: 0;
+                width: 100%;
+                font-size: 52px;
+                line-height: 64px;
+            }
+            .form-3 {
+                max-width: 500px;
+                margin: 0 auto;
+                margin-top: 24px;
+                .inputs-wrapper {
+                    flex-direction: column;
+                    .form-input-wrapper,
+                    .form-input,
+                    .form-btn {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .photo-section {
+            .photo-viewer {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(3, 1fr);
+                .photo-1 {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row-start: 1;
+                    grid-row-end: 3;
+                }
+                .photo-2 {
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    grid-row-start: 3;
+                    grid-row-end: 4;
+                }
+                .photo-3 {
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    grid-row-start: 3;
+                    grid-row-end: 4;
+                }
+            }
+        }
     }
 }
 
@@ -1743,6 +1792,23 @@ body {
                 .services-item {
                     height: 80px;
                 }
+            }
+        }
+        .form-3-section {
+            .form-3-bg {
+                padding-top: 24px;
+                padding-bottom: 16px;
+            }
+            .form-3-title {
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+        .photo-section {
+            padding-top: 32px;
+            padding-bottom: 18px;
+            .photo-title {
+                text-align: left;
             }
         }
     }
