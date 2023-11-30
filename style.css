@@ -1146,6 +1146,9 @@ body {
   height: 120px;
   margin: 0 auto;
   margin-bottom: 24px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
 }
 .main .coaches-section .coaches-slider .slider-item .coach-name,
 .main .coaches-section .coaches-tablet-wrapper .slider-item .coach-name {
@@ -1158,23 +1161,23 @@ body {
 }
 .main .coaches-section .coaches-slider .slider-item-1 .coach-photo,
 .main .coaches-section .coaches-tablet-wrapper .slider-item-1 .coach-photo {
-  background-image: url(images/coach-photo-1.png);
+  background-image: url(images/coach-photo-1.jpg);
 }
 .main .coaches-section .coaches-slider .slider-item-2 .coach-photo,
 .main .coaches-section .coaches-tablet-wrapper .slider-item-2 .coach-photo {
-  background-image: url(images/coach-photo-2.png);
+  background-image: url(images/coach-photo-2.jpg);
 }
 .main .coaches-section .coaches-slider .slider-item-3 .coach-photo,
 .main .coaches-section .coaches-tablet-wrapper .slider-item-3 .coach-photo {
-  background-image: url(images/coach-photo-3.png);
+  background-image: url(images/coach-photo-3.jpg);
 }
 .main .coaches-section .coaches-slider .slider-item-4 .coach-photo,
 .main .coaches-section .coaches-tablet-wrapper .slider-item-4 .coach-photo {
-  background-image: url(images/coach-photo-4.png);
+  background-image: url(images/coach-photo-4.jpg);
 }
 .main .coaches-section .coaches-slider .slider-item-5 .coach-photo,
 .main .coaches-section .coaches-tablet-wrapper .slider-item-5 .coach-photo {
-  background-image: url(images/coach-photo-5.png);
+  background-image: url(images/coach-photo-5.jpg);
 }
 .main .coaches-section .coaches-slider .slick-prev:before,
 .main .coaches-section .coaches-slider .slick-next:before,
