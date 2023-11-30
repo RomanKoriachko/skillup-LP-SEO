@@ -172,6 +172,22 @@ body {
 .header .header-menu .header-menu-item {
   cursor: pointer;
 }
+.header .language-change > a {
+  text-decoration: none;
+  color: #1f1e28;
+}
+.header .language-change > a:visited {
+  color: #1f1e28;
+}
+.header .language-change .current-language {
+  font-weight: 700;
+}
+.header .language-change .language-item {
+  cursor: pointer;
+}
+.header .language-change .language-items-separator {
+  margin: 0 5px;
+}
 .header .registration-btn {
   font-family: "Exo 2", sans-serif;
   padding: 14px 16px;

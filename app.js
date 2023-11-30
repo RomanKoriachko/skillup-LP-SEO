@@ -87,7 +87,7 @@ function validatePhone(id, formSelector) {
     const form = document.querySelector(formSelector);
     const errorMap = [
         "Некорректный номер",
-        "Некоректный код страны",
+        "Некорректный код страны",
         "Мало символов",
         "Слишком много символов",
         "Некорректный номер",

@@ -82,6 +82,24 @@ body {
             cursor: pointer;
         }
     }
+    .language-change {
+        > a {
+            text-decoration: none;
+            color: #1f1e28;
+        }
+        > a:visited {
+            color: #1f1e28;
+        }
+        .current-language {
+            font-weight: 700;
+        }
+        .language-item {
+            cursor: pointer;
+        }
+        .language-items-separator {
+            margin: 0 5px;
+        }
+    }
     .registration-btn {
         @include registrationBtn();
         background-color: transparent;
