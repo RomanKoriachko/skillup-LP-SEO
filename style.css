@@ -181,6 +181,12 @@ body {
   align-items: center;
   gap: 15px;
 }
+.header .language-change .current-lang-link {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
 .header .language-change a {
   text-decoration: none;
   color: #1f1e28;
@@ -215,6 +221,9 @@ body {
   border: 1px solid #fa2702;
   color: #fa2702;
   min-width: 185px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .header .registration-btn::after {
   content: "";
@@ -686,7 +695,6 @@ body {
 .main .benefits-section {
   padding-top: 60px;
   padding-bottom: 75px;
-  cursor: url(images/mouse-pointer-black.svg), auto;
 }
 .main .benefits-section .benefits-title {
   margin-bottom: 40px;
@@ -704,7 +712,6 @@ body {
   transition: 0.3s all;
 }
 .main .benefits-section .benefits-wrapper .benefit-item:hover {
-  cursor: url(images/mouse-pointer-white.svg), auto;
   background-color: #17161f;
 }
 .main .benefits-section .benefits-wrapper .benefit-item:hover .benefit-item-title {
@@ -901,6 +908,9 @@ body {
   overflow: hidden;
   z-index: 10;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .main .cource-section .cource-content-wrapper .cource-content-item .cource-content-item-name-wrapper .plus-img {
   min-width: 24px;
@@ -1272,7 +1282,6 @@ body {
 .main .questions-section {
   padding-top: 70px;
   padding-bottom: 30px;
-  cursor: url(images/mouse-pointer-black.svg), auto;
   color: #0d1a30;
   overflow: hidden;
 }
@@ -1304,7 +1313,6 @@ body {
   overflow: hidden;
   cursor: pointer;
   width: 100%;
-  cursor: url(images/mouse-pointer-black.svg), auto;
 }
 .main .questions-section .questions-wrapper .questions-description .questions-btn::after {
   content: "";
@@ -1336,6 +1344,10 @@ body {
   padding: 20px 28px;
   border: 2px solid #989898;
   border-radius: 8px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   transition: all 0.5s;
 }
 .main .questions-section .questions-wrapper .questions-content .questions-item .question-header-wrapper .question-header {

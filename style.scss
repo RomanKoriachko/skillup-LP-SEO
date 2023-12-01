@@ -92,7 +92,10 @@ body {
         gap: 15px;
     }
     .language-change {
-        // min-width: 56px;
+        .current-lang-link {
+            pointer-events: none;
+            user-select: none;
+        }
         a {
             text-decoration: none;
             color: #1f1e28;
@@ -116,6 +119,7 @@ body {
         border: 1px solid #fa2702;
         color: #fa2702;
         min-width: 185px;
+        user-select: none;
         &::after {
             background: #fa27022d;
         }
@@ -501,7 +505,7 @@ body {
     .benefits-section {
         padding-top: 60px;
         padding-bottom: 75px;
-        cursor: url(images/mouse-pointer-black.svg), auto;
+        // cursor: url(images/mouse-pointer-black.svg), auto;
         .benefits-title {
             margin-bottom: 40px;
         }
@@ -516,7 +520,7 @@ body {
                 border-radius: 8px;
                 transition: 0.3s all;
                 &:hover {
-                    cursor: url(images/mouse-pointer-white.svg), auto;
+                    // cursor: url(images/mouse-pointer-white.svg), auto;
                     background-color: #17161f;
                     .benefit-item-title {
                         color: #4ebd09;
@@ -677,6 +681,7 @@ body {
                     overflow: hidden;
                     z-index: 10;
                     cursor: pointer;
+                    user-select: none;
                     .plus-img {
                         min-width: 24px;
                         min-height: 24px;
@@ -1007,7 +1012,7 @@ body {
     .questions-section {
         padding-top: 70px;
         padding-bottom: 30px;
-        cursor: url(images/mouse-pointer-black.svg), auto;
+        // cursor: url(images/mouse-pointer-black.svg), auto;
         color: #0d1a30;
         overflow: hidden;
         .questions-wrapper {
@@ -1024,7 +1029,7 @@ body {
                 .questions-btn {
                     @include registrationBtn();
                     width: 100%;
-                    cursor: url(images/mouse-pointer-black.svg), auto;
+                    // cursor: url(images/mouse-pointer-black.svg), auto;
                 }
             }
             .questions-content {
@@ -1037,6 +1042,8 @@ body {
                         padding: 20px 28px;
                         border: 2px solid #989898;
                         border-radius: 8px;
+                        cursor: pointer;
+                        user-select: none;
                         transition: all 0.5s;
                         .question-header {
                             font-size: 20px;
