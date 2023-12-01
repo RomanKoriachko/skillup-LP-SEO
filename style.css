@@ -161,6 +161,10 @@ body {
 .header .header-wrapper {
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
+}
+.header .header-logo {
+  min-width: 60px;
 }
 .header .header-menu {
   font-size: 16px;
@@ -168,15 +172,20 @@ body {
   line-height: 19px;
   gap: 32px;
   color: #989898;
+  min-width: 459px;
 }
 .header .header-menu .header-menu-item {
   cursor: pointer;
 }
-.header .language-change > a {
+.header .language-change-and-btn {
+  align-items: center;
+  gap: 15px;
+}
+.header .language-change a {
   text-decoration: none;
   color: #1f1e28;
 }
-.header .language-change > a:visited {
+.header .language-change a:visited {
   color: #1f1e28;
 }
 .header .language-change .current-language {
@@ -205,6 +214,7 @@ body {
   background-color: transparent;
   border: 1px solid #fa2702;
   color: #fa2702;
+  min-width: 185px;
 }
 .header .registration-btn::after {
   content: "";
@@ -1675,6 +1685,9 @@ body {
 @media (max-width: 1200px) {
   .header .header-menu {
     gap: 14px;
+  }
+  .header .language-change-and-btn {
+    flex-direction: column-reverse;
   }
   .main .introduce-section .introduce-wrapper .introduce-info-wrapper {
     gap: 50px;

@@ -71,6 +71,10 @@ body {
     .header-wrapper {
         align-items: center;
         justify-content: space-between;
+        gap: 10px;
+    }
+    .header-logo {
+        min-width: 60px;
     }
     .header-menu {
         font-size: 16px;
@@ -78,16 +82,22 @@ body {
         line-height: 19px;
         gap: 32px;
         color: #989898;
+        min-width: 459px;
         .header-menu-item {
             cursor: pointer;
         }
     }
+    .language-change-and-btn {
+        align-items: center;
+        gap: 15px;
+    }
     .language-change {
-        > a {
+        // min-width: 56px;
+        a {
             text-decoration: none;
             color: #1f1e28;
         }
-        > a:visited {
+        a:visited {
             color: #1f1e28;
         }
         .current-language {
@@ -105,6 +115,7 @@ body {
         background-color: transparent;
         border: 1px solid #fa2702;
         color: #fa2702;
+        min-width: 185px;
         &::after {
             background: #fa27022d;
         }
@@ -1358,6 +1369,9 @@ body {
     .header {
         .header-menu {
             gap: 14px;
+        }
+        .language-change-and-btn {
+            flex-direction: column-reverse;
         }
     }
 

@@ -21,6 +21,7 @@ const programBtn = document.querySelector(".header-menu-item-program");
 const coachesBtn = document.querySelector(".header-menu-item-coaches");
 const reviewBtn = document.querySelector(".header-menu-item-review");
 const contactsBtn = document.querySelector(".header-menu-item-contact");
+const introduceBtn = document.querySelector(".introduce-btn");
 
 const aboutSection = document.querySelector(".benefits-section");
 const programSection = document.querySelector(".cource-section");
@@ -29,6 +30,12 @@ const reviewSection = document.querySelector(".video-section");
 const contactSection = document.querySelector(".footer");
 
 aboutBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: aboutSection.getBoundingClientRect().top + window.scrollY,
+        behavior: "smooth",
+    });
+});
+introduceBtn.addEventListener("click", () => {
     window.scrollTo({
         top: aboutSection.getBoundingClientRect().top + window.scrollY,
         behavior: "smooth",
